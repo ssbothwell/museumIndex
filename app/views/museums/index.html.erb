@@ -1,0 +1,6 @@
+<div class="museum">
+  <h3>Los Angeles County Museum Of Art</h3>
+  <% @ExhibitionsLacma.to_hash.each do |exhibition| %>
+  	<%= link_to exhibition[:link_title], exhibition[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+  <% end %>
+</div>

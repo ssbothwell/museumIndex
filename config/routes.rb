@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :museums
+
   map.resources :homes
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -42,5 +44,5 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  map.root :controller => "home"
+  map.root :controller => "museums"
 end
