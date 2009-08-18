@@ -4757,3 +4757,76 @@ Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 10:23:13) [GET]
 Rendering template within layouts/application
 Rendering museums/index
 Completed in 3757ms (View: 8, DB: 0) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 10:25:10) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4584ms (View: 18, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 10:26:50) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4050ms (View: 7, DB: 0) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 10:26:57) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 3536ms (View: 7, DB: 0) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 12:26:20) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5452ms (View: 11, DB: 0) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 12:26:51) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5270ms (View: 71, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 12:28:34) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.parent):
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/filters/tree_filter.rb:96:in `generate_XPath_for_example'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/filters/tree_filter.rb:89:in `loop'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/filters/tree_filter.rb:89:in `generate_XPath_for_example'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:113:in `initialize'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:112:in `each'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:112:in `initialize'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:69:in `new'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:69:in `method_missing'
+  app/controllers/museums_controller.rb:99:in `ExtractorLacma'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:75:in `instance_eval'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:75:in `initialize'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:32:in `new'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:32:in `define'
+  app/controllers/museums_controller.rb:93:in `ExtractorLacma'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 12:28:41) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4295ms (View: 7, DB: 0) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 12:28:53) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5115ms (View: 12, DB: 1) | 200 OK [http://localhost/museums]

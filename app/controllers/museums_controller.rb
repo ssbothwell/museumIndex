@@ -139,7 +139,9 @@ class MuseumsController < ApplicationController
   
   def extractorSkirball
     @ExhibitionsSkirball = Scrubyt::Extractor.define do
-      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
+      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u', :write_text => true do
+        url "href", :type => :attribute
+      end
 
         link_title "//div[1]/table//tr/td/h4/a"
     end
