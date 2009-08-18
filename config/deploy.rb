@@ -16,7 +16,7 @@ set :use_sudo, false
 # Git
 
 set :scm, :git
-set :repository, "git@github.com:ssbothwell/martinlubner.com.git"
+set :repository, "git@github.com:ssbothwell/museumIndex.git"
 set :scm_username, "ssbothwell"
 set :scm_passphrase, "haskard"
 ssh_options[:paranoid] = false
