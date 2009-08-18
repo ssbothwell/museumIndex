@@ -1,6 +1,8 @@
 class MuseumsController < ApplicationController
-  before_filter :ExtractorLacma,
+  before_filter [:ExtractorLacma, :ExtractorHammer, :ExtractorOCMA, :ExtractorNortonSimon, :extractorGettyCenter, :extractorSkirball],
     :only => [:index]
+    
+
   # GET /museums
   # GET /museums.xml
   def index
@@ -96,13 +98,50 @@ class MuseumsController < ApplicationController
         end
       end
   end
+  
+  def ExtractorHammer
+    @ExhibitionsHammer = Scrubyt::Extractor.define do
+      fetch          'http://hammer.ucla.edu/exhibitions/exhibitions'
 
-  @ExhibitionsHammer = Scrubyt::Extractor.define do
-    fetch          'http://hammer.ucla.edu/exhibitions/exhibitions'
+        link_title "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :write_text => true do
+          url "href", :type => :attribute
+        end
+      end
+  end
+  
+  def ExtractorOCMA 
+    @ExhibitionsOCMA = Scrubyt::Extractor.define do
+    fetch          'http://www.ocma.net/index.html?page=current'
 
-      link_title "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :write_text => true do
-        url 'href', :type => :attribute
+      link_title "//td/p/a", :write_text => true do
+        url "href", :type => :attribute
       end
     end
+  end
 
+  def ExtractorNortonSimon
+    @ExhibitionsNorton = Scrubyt::Extractor.define do
+      fetch          'http://www.nortonsimon.org/exhibitions.aspx?id=6'
+
+        link_title "//div[@id='maincol']/div/a[2]", :write_text => true do
+          url "href", :type => :attribute
+        end
+    end
+  end
+  
+  def extractorGettyCenter
+    @ExhibitionsGettyCenter = Scrubyt::Extractor.define do
+      fetch          'http://www.getty.edu/museum/exhibitions'
+
+        link_title "//td[1]/div/table[2]//tr/td//p/a[1]"
+    end
+  end
+  
+  def extractorSkirball
+    @ExhibitionsSkirball = Scrubyt::Extractor.define do
+      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
+
+        link_title "//div[1]/table//tr/td/h4/a"
+    end
+  end
 end
