@@ -86,6 +86,7 @@ class MuseumsController < ApplicationController
   end
   
   private
+  
   def ExtractorLacma
     @ExhibitionsLacma = Scrubyt::Extractor.define do
       fetch          'http://www.lacma.org/art/ExhibCurrent.aspx'
@@ -95,4 +96,13 @@ class MuseumsController < ApplicationController
         end
       end
   end
+
+  @ExhibitionsHammer = Scrubyt::Extractor.define do
+    fetch          'http://hammer.ucla.edu/exhibitions/exhibitions'
+
+      link_title "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :write_text => true do
+        url 'href', :type => :attribute
+      end
+    end
+
 end

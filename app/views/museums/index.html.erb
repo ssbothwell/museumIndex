@@ -4,3 +4,9 @@
   	<%= link_to exhibition[:link_title], exhibition[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
   <% end %>
 </div>
+<div class="museum">
+  <h3>Hammer Museum</h3>
+  <% @ExhibitionsHammer.to_hash.each do |exhibitionHammer| %>
+  	<%= link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+  <% end %>
+</div>
