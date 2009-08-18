@@ -1,5 +1,5 @@
 # Application
-set :application, "museumindex"
+set :application, "museumIndex"
 set :deploy_to, "/home/ssbothwelladmin/museumindex.ssbothwell.com"
 
 # Settings
