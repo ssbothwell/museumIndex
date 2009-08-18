@@ -2803,3 +2803,579 @@ Processing HomeController#index (for 127.0.0.1 at 2009-08-17 11:41:21) [GET]
 Rendering home/index
 Completed in 422ms (View: 7, DB: 0) | 200 OK [http://localhost/home]
 >>>>>>> 886606f4e349133a6c741cf77a22240c75ebc31e:log/development.log
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 12:46:31) [GET]
+Rendering home/index
+Completed in 548ms (View: 7, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 17:40:00) [GET]
+Rendering home/index
+Completed in 519ms (View: 7, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:05:24) [GET]
+
+SyntaxError (/Users/solomon/programming/scrubytonrails/app/controllers/home_controller.rb:5: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:05:43) [GET]
+
+SyntaxError (/Users/solomon/programming/scrubytonrails/app/controllers/home_controller.rb:5: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (99.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:05:47) [GET]
+
+SyntaxError (/Users/solomon/programming/scrubytonrails/app/controllers/home_controller.rb:4: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:05:57) [GET]
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash) on line #3 of app/views/home/index.html.erb:
+1: <h1>Listing home</h1>
+2: 
+3: <% @exhibitions.to_hash.each do |exhibition| %>
+4: 	<%= link_to exhibition[:link_title], exhibition[:url] %><br />
+5: <% end %>
+
+    app/views/home/index.html.erb:3
+
+Rendered rescues/_trace (100.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:06:02) [GET]
+
+SyntaxError (/Users/solomon/programming/scrubytonrails/lib/extractor_lacma.rb:1: class/module name must be CONSTANT
+/Users/solomon/programming/scrubytonrails/lib/extractor_lacma.rb:10: syntax error, unexpected kEND, expecting $end):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:06:23) [GET]
+
+SyntaxError (/Users/solomon/programming/scrubytonrails/lib/extractor_lacma.rb:1: class/module name must be CONSTANT
+/Users/solomon/programming/scrubytonrails/lib/extractor_lacma.rb:10: syntax error, unexpected kEND, expecting $end):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:06:45) [GET]
+
+SyntaxError (/Users/solomon/programming/scrubytonrails/lib/extractor_lacma.rb:10: syntax error, unexpected kEND, expecting $end):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:07:03) [GET]
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash) on line #3 of app/views/home/index.html.erb:
+1: <h1>Listing home</h1>
+2: 
+3: <% @exhibitions.to_hash.each do |exhibition| %>
+4: 	<%= link_to exhibition[:link_title], exhibition[:url] %><br />
+5: <% end %>
+
+    app/views/home/index.html.erb:3
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:08:29) [GET]
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash) on line #3 of app/views/home/index.html.erb:
+1: <h1>Listing home</h1>
+2: 
+3: <% @exhibitions.to_hash.each do |exhibition| %>
+4: 	<%= link_to exhibition[:link_title], exhibition[:url] %><br />
+5: <% end %>
+
+    app/views/home/index.html.erb:3
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:10:22) [GET]
+
+NoMethodError (undefined method `extractor_lacma' for #<HomeController:0x26950d0>):
+  
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:10:34) [GET]
+
+NoMethodError (undefined method `ExtractorLacma' for #<HomeController:0x28238d4>):
+  
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:10:53) [GET]
+
+NoMethodError (undefined method `ExtractorLacma' for #<HomeController:0x294c29c>):
+  
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:11:33) [GET]
+
+NoMethodError (undefined method `Lacma' for #<HomeController:0x27a39cc>):
+  
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:11:47) [GET]
+
+NoMethodError (undefined method `ExtractorLacma' for #<HomeController:0x2975c3c>):
+  
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:11:56) [GET]
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash) on line #3 of app/views/home/index.html.erb:
+1: <h1>Listing home</h1>
+2: 
+3: <% @exhibitions.to_hash.each do |exhibition| %>
+4: 	<%= link_to exhibition[:link_title], exhibition[:url] %><br />
+5: <% end %>
+
+    app/views/home/index.html.erb:3
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:12:05) [GET]
+
+NoMethodError (undefined method `ExtractorLacma' for #<HomeController:0x2952df4>):
+  
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:14:30) [GET]
+Rendering home/index
+Completed in 399ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:15:18) [GET]
+
+NoMethodError (undefined method `ExtractorLacma' for #<HomeController:0x27f9098>):
+  
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:15:35) [GET]
+
+NoMethodError (undefined method `ExtractorLacma' for #<HomeController:0x2862764>):
+  
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:18:56) [GET]
+Rendering home/index
+Completed in 610ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#ExtractorLacma (for 127.0.0.1 at 2009-08-17 20:19:06) [GET]
+
+ActionController::UnknownAction (No action responded to ExtractorLacma. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#ExtractorLacma (for 127.0.0.1 at 2009-08-17 20:19:14) [GET]
+
+ActionView::MissingTemplate (Missing template home/ExtractorLacma.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:19:21) [GET]
+Rendering home/index
+Completed in 517ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#ExtractorLacma (for 127.0.0.1 at 2009-08-17 20:19:23) [GET]
+
+ActionController::UnknownAction (No action responded to ExtractorLacma. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:19:24) [GET]
+Rendering home/index
+Completed in 447ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:19:48) [GET]
+
+MissingSourceFile (no such file to load -- ExtractorLacma):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:19:55) [GET]
+
+MissingSourceFile (no such file to load -- ExtractorLacma):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (100.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:20:01) [GET]
+Rendering home/index
+Completed in 456ms (View: 7, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:20:19) [GET]
+Rendering home/index
+Completed in 459ms (View: 66, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:21:29) [GET]
+Rendering home/index
+Completed in 356ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:22:12) [GET]
+Rendering home/index
+Completed in 549ms (View: 5, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:22:14) [GET]
+Rendering home/index
+Completed in 398ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:22:20) [GET]
+Rendering home/index
+Completed in 376ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:28:57) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:29:39) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 513ms (View: 76, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:29:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:29:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 328ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:29:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:30:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 379ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:30:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:30:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 469ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:30:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:31:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 388ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-17 20:31:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:32:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 394ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:33:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 410ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:34:39) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 404ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:34:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 417ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:35:02) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 527ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:35:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 374ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:35:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 511ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:36:00) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 357ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:37:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 485ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:37:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 395ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:37:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 491ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:37:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 365ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:37:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 505ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:38:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 413ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:38:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 551ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:40:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 491ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:40:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 569ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:41:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 340ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:41:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 566ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:41:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 462ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:42:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 485ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:42:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 494ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:42:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 475ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:43:00) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 461ms (View: 72, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:43:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 385ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:43:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 436ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:43:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 957ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:43:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 569ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:43:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 400ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-17 20:44:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 391ms (View: 6, DB: 0) | 200 OK [http://localhost/]
