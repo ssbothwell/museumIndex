@@ -1,6 +1,6 @@
 # Application
 set :application, "museumindex"
-set :deploy_to, "/home/ssbothwelladmin/musemindex.ssbothwell.com"
+set :deploy_to, "/home/ssbothwelladmin/museumindex.ssbothwell.com"
 
 # Settings
 set :use_sudo, false

@@ -6,4 +6,3 @@ doc/app
 public/assets/*
 db/development.sqlite3
 config/database.yml
-config/deploy.rb
