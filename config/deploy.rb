@@ -18,7 +18,6 @@ set :use_sudo, false
 set :scm, :git
 set :repository, "git@github.com:ssbothwell/museumIndex.git"
 set :scm_username, "ssbothwell"
-set :scm_passphrase, "haskard"
 ssh_options[:paranoid] = false
 default_run_options[:pty] = true
 
