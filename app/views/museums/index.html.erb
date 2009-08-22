@@ -1,30 +1,30 @@
 <div class="museum">
   <h3>Los Angeles County Museum Of Art</h3>
-  <% @ExhibitionsLacma.to_hash.each do |exhibition| %>
+  <% @LACMA.each do |exhibition| %>
   	<%= link_to exhibition[:link_title], exhibition[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
   <% end %>
 </div>
 <div class="museum">
   <h3>Hammer Museum</h3>
-  <% @ExhibitionsHammer.to_hash.each do |exhibitionHammer| %>
+  <% @HAMMER.each do |exhibitionHammer| %>
   	<%= link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
   <% end %>
 </div>
 <div class="museum">
   <h3>Orange County Museum Of Art</h3>
-  <% @ExhibitionsOCMA.to_hash.each do |exhibitionOCMA| %>
+  <% @OCMA.each do |exhibitionOCMA| %>
   	<%= link_to exhibitionOCMA[:link_title], exhibitionOCMA[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
   <% end %>
 </div>
 <div class="museum">
   <h3>Norton Simon Museum</h3>
-  <% @ExhibitionsNorton.to_hash.each do |exhibitionNorton| %>
+  <% @NortonSimon.each do |exhibitionNorton| %>
   	<%= link_to exhibitionNorton[:link_title], exhibitionNorton[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
   <% end %>
 </div>
 <div class="museum">
   <h3>Getty Center Los Angeles</h3>
-  <% @ExhibitionsGettyCenter.to_hash.each do |exhibitionGetty| %>
+  <% @GettyCenter.each do |exhibitionGetty| %>
   	<%= link_to exhibitionGetty[:link_title], exhibitionGetty[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
   <% end %>
 </div>

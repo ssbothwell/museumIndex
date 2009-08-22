@@ -90,60 +90,65 @@ class MuseumsController < ApplicationController
   private
   
   def ExtractorLacma
-    @ExhibitionsLacma = Scrubyt::Extractor.define do
+    @ExtractorLacma = Scrubyt::Extractor.define do
       fetch          'http://www.lacma.org/art/ExhibCurrent.aspx'
       
       link_title "//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a[1]", :write_text => true do
         url 'href', :type => :attribute
         end
       end
+      @LACMA = @ExtractorLacma.to_hash
   end
   
   def ExtractorHammer
-    @ExhibitionsHammer = Scrubyt::Extractor.define do
+    @ExtractorHammer = Scrubyt::Extractor.define do
       fetch          'http://hammer.ucla.edu/exhibitions/exhibitions'
 
         link_title "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :write_text => true do
           url "href", :type => :attribute
         end
       end
+    @HAMMER = @ExtractorHammer.to_hash
   end
   
   def ExtractorOCMA 
-    @ExhibitionsOCMA = Scrubyt::Extractor.define do
+    @ExtractorOCMA = Scrubyt::Extractor.define do
     fetch          'http://www.ocma.net/index.html?page=current'
 
       link_title "//td/p/a", :write_text => true do
         url "href", :type => :attribute
       end
     end
+    @OCMA = @ExtractorOCMA.to_hash
   end
 
   def ExtractorNortonSimon
-    @ExhibitionsNorton = Scrubyt::Extractor.define do
+    @ExtractorNortonSimon = Scrubyt::Extractor.define do
       fetch          'http://www.nortonsimon.org/exhibitions.aspx?id=6'
 
         link_title "//div[@id='maincol']/div/a[2]", :write_text => true do
           url "href", :type => :attribute
         end
     end
+    @NortonSimon = @ExtractorNortonSimon.to_hash
   end
   
   def extractorGettyCenter
-    @ExhibitionsGettyCenter = Scrubyt::Extractor.define do
+    @ExtractorGettyCenter = Scrubyt::Extractor.define do
       fetch          'http://www.getty.edu/museum/exhibitions'
 
         link_title "//td[1]/div/table[2]//tr/td//p/a[1]"
     end
+    @GettyCenter = @ExtractorGettyCenter.to_hash
   end
   
   def extractorSkirball
     @ExhibitionsSkirball = Scrubyt::Extractor.define do
-      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u', :write_text => true do
-        url "href", :type => :attribute
-      end
+      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
 
-        link_title "//div[1]/table//tr/td/h4/a"
+        link_title "//div[1]/table//tr/td/h4/a", :write_text => true do
+          url "href", :type => :attribute
+        end
     end
   end
 end
