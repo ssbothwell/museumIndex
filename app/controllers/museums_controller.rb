@@ -108,7 +108,10 @@ class MuseumsController < ApplicationController
           url "href", :type => :attribute
         end
       end
-    @HAMMER = @ExtractorHammer.to_hash
+    @Hammer = @ExtractorHammer.to_hash
+    @Hammer.each do |l|
+      l[:url] = "http://hammer.ucla.edu/" + l[:url]
+    end
   end
   
   def ExtractorOCMA 
@@ -120,6 +123,9 @@ class MuseumsController < ApplicationController
       end
     end
     @OCMA = @ExtractorOCMA.to_hash
+    @OCMA.each do |l|
+      l[:url] = "http://www.ocma.net/" + l[:url]
+    end
   end
 
   def ExtractorNortonSimon
@@ -131,6 +137,9 @@ class MuseumsController < ApplicationController
         end
     end
     @NortonSimon = @ExtractorNortonSimon.to_hash
+    @NortonSimon.each do |l|
+      l[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6" +l[:url]
+    end
   end
   
   def extractorGettyCenter
@@ -143,12 +152,16 @@ class MuseumsController < ApplicationController
   end
   
   def extractorSkirball
-    @ExhibitionsSkirball = Scrubyt::Extractor.define do
+    @ExtractorSkirball = Scrubyt::Extractor.define do
       fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
 
         link_title "//div[1]/table//tr/td/h4/a", :write_text => true do
           url "href", :type => :attribute
         end
+    end
+    @Skirball = @ExtractorSkirball.to_hash
+    @Skirball.each do |l|
+      l[:url] = "http://www.skirball.org/" + l[:url]
     end
   end
 end
