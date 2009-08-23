@@ -92,11 +92,18 @@ class MuseumsController < ApplicationController
   def ExtractorLacma
     @ExtractorLacma = Scrubyt::Extractor.define do
       fetch          'http://www.lacma.org/art/ExhibCurrent.aspx'
-      
-      link_title "//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a[1]", :write_text => true do
+
+      exhibition "//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a[1]", :generalize => false do
         url 'href', :type => :attribute
+        exhibition_details do
+          title "//table//tr/td[1]/p[2]/span[@class='BODY_exhTitle']"
+          title "//table[2]//tr/td[1]/p[3]/span[@class='BODY_exhTitle']"
+          title "//table[2]//tr/td[1]/p[3]/span/span[@class='BODY_exhTitle']"
+          date "//table//tr/td[1]/p/span/span[@class='BODY_criticsChoice_creditName']"
+          date "//table//tr/td[1]/p/span[@class='BODY_criticsChoice_creditName']"
         end
       end
+    end
       @LACMA = @ExtractorLacma.to_hash
   end
   
@@ -104,10 +111,14 @@ class MuseumsController < ApplicationController
     @ExtractorHammer = Scrubyt::Extractor.define do
       fetch          'http://hammer.ucla.edu/exhibitions/exhibitions'
 
-        link_title "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :write_text => true do
-          url "href", :type => :attribute
+      exhibition "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :generalize => false do
+        url "href", :type => :attribute
+        exhibition_details do
+          title "//div[1]/div[2]/div[2]/div[2]/h1"
+          date "//div[1]/div[2]/div[2]/div[2]/h3"
         end
       end
+    end
     @Hammer = @ExtractorHammer.to_hash
     @Hammer.each do |l|
       l[:url] = "http://hammer.ucla.edu/" + l[:url]
@@ -116,15 +127,16 @@ class MuseumsController < ApplicationController
   
   def ExtractorOCMA 
     @ExtractorOCMA = Scrubyt::Extractor.define do
-    fetch          'http://www.ocma.net/index.html?page=current'
+      fetch          'http://www.ocma.net/index.html?page=current'
 
-      link_title "//td/p/a", :write_text => true do
-        url "href", :type => :attribute
-      end
+        exhibition "//table[3]//tr/td[4]/table[1]//tr/td", :generalize => false do
+          title "//p/a[@class='ex_link']"
+          date "//p/span[3]"
+        end
     end
     @OCMA = @ExtractorOCMA.to_hash
     @OCMA.each do |l|
-      l[:url] = "http://www.ocma.net/" + l[:url]
+      l[:url] = "http://www.ocma.net/index.html?page=current"
     end
   end
 
@@ -132,13 +144,14 @@ class MuseumsController < ApplicationController
     @ExtractorNortonSimon = Scrubyt::Extractor.define do
       fetch          'http://www.nortonsimon.org/exhibitions.aspx?id=6'
 
-        link_title "//div[@id='maincol']/div/a[2]", :write_text => true do
-          url "href", :type => :attribute
+        exhibition "//div[@class='ExhibitionSummary']" do
+          title "//a[2]"
+          date "//div[@class='Dates']"
         end
     end
     @NortonSimon = @ExtractorNortonSimon.to_hash
     @NortonSimon.each do |l|
-      l[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6" +l[:url]
+      l[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6"
     end
   end
   
@@ -146,7 +159,7 @@ class MuseumsController < ApplicationController
     @ExtractorGettyCenter = Scrubyt::Extractor.define do
       fetch          'http://www.getty.edu/museum/exhibitions'
 
-        link_title "//td[1]/div/table[2]//tr/td//p/a[1]"
+        title "//td[1]/div/table[2]//tr/td//p/a[1]"
     end
     @GettyCenter = @ExtractorGettyCenter.to_hash
   end
@@ -154,14 +167,15 @@ class MuseumsController < ApplicationController
   def extractorSkirball
     @ExtractorSkirball = Scrubyt::Extractor.define do
       fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
-
-        link_title "//div[1]/table//tr/td/h4/a", :write_text => true do
-          url "href", :type => :attribute
+      exhibition "//div[1]/table//tr/td/h4/a", :generalize => false do
+        url "href", :type => :attribute
+        exhibition_details do
+          title "//h4[@class='program']"
+          date "//div[@class='event']/div[@class='event_info']/div[@class='time']/p[1]"
         end
+      end
     end
     @Skirball = @ExtractorSkirball.to_hash
-    @Skirball.each do |l|
-      l[:url] = "http://www.skirball.org/" + l[:url]
-    end
   end
+
 end

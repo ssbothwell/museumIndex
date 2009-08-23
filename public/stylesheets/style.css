@@ -52,7 +52,7 @@ ul#location li {
 	width: 40%;
 	height: 100%;
 	margin: 0 40px;
-	padding-bottom: 10px;
+	padding-bottom: 0;
 
 }
 
@@ -67,4 +67,10 @@ ul#location li {
 
 #description {
 	float: left;
+}
+
+p.date {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
 }
