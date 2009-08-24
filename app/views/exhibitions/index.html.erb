@@ -9,9 +9,8 @@
   </tr>
   <% for exhibition in @exhibitions %>
     <tr>
-      <td><%=h exhibition.title %></td>
+      <td><%= link_to exhibition.title, exhibition.url %></td>
       <td><%=h exhibition.date %></td>
-      <td><%=h exhibition.url %></td>
       <td><%=h exhibition.museum %></td>
       <td><%= link_to "Show", exhibition %></td>
       <td><%= link_to "Edit", edit_exhibition_path(exhibition) %></td>
