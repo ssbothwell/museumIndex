@@ -116,4 +116,13 @@ namespace :extractor do
     end
   end
   
+  task :gettyCenter => :environment do
+    ExtractorGettyCenter = Scrubyt::Extractor.define do
+      fetch          'http://www.getty.edu/museum/exhibitions'
+
+        title "//td[1]/div/table[2]//tr/td//p/a[1]"
+    end
+    DataHash = ExtractorGettyCenter.to_hash
+  end
+  
 end

@@ -6774,3 +6774,1015 @@ Processing MuseumsController#index (for 127.0.0.1 at 2009-08-23 23:03:56) [GET]
 Rendering template within layouts/application
 Rendering museums/index
 Completed in 18959ms (View: 207, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mExhibition Create (0.6ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:43:08', '"From the Spoon to the City": Objects by Architects from LACMA''s Collection', 'August 6, 2009–January 24, 2010', 'http://www.lacma.org/art/ExhibSpoontoCity.aspx', '2009-08-24 07:43:08')[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:43:08', 'Your Bright Future: 12 Contemporary Artists from Korea', 'June 28–September 20, 2009', 'http://www.lacma.org/art/ExhibFuture.aspx', '2009-08-24 07:43:08')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:43:08', 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples', 'May 3–October 4, 2009', 'http://www.lacma.org/art/ExhibPompeii.aspx', '2009-08-24 07:43:08')[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:43:08', 'Classical Frieze: Eleanor Antin', 'May 14, 2009–October 4, 2009', 'http://www.lacma.org/art/ExhibFrieze.aspx', '2009-08-24 07:43:08')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:43:08', 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection', 'September 18, 2008–September 6, 2009', 'http://www.lacma.org/art/ExhibTextiles.aspx', '2009-08-24 07:43:08')[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:43:19) [GET]
+  [4;36;1mExhibition Load (1.2ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x2720a68>) on line #1 of app/views/exhibitions/index.html.erb:
+1: <% title "Exhibitions" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/exhibitions/index.html.erb:1
+
+Rendered rescues/_trace (42.9ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:43:20) [GET]
+  [4;35;1mExhibition Load (0.8ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x251dc48>) on line #1 of app/views/exhibitions/index.html.erb:
+1: <% title "Exhibitions" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/exhibitions/index.html.erb:1
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:43:22) [GET]
+  [4;36;1mExhibition Load (0.8ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x25c8184>) on line #1 of app/views/exhibitions/index.html.erb:
+1: <% title "Exhibitions" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/exhibitions/index.html.erb:1
+
+Rendered rescues/_trace (102.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:43:50) [GET]
+  [4;35;1mExhibition Load (1.0ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 39ms (View: 33, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#edit (for 127.0.0.1 at 2009-08-24 00:44:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mExhibition Load (0.2ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering exhibitions/edit
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x25c73ec>) on line #1 of app/views/exhibitions/edit.html.erb:
+1: <% title "Edit Exhibition" %>
+2: 
+3: <%= render :partial => 'form' %>
+4: 
+
+    app/views/exhibitions/edit.html.erb:1
+
+Rendered rescues/_trace (104.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:44:29) [GET]
+  [4;35;1mExhibition Load (1.0ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:44:30) [GET]
+  [4;36;1mExhibition Load (1.6ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:44:39) [GET]
+  [4;36;1mExhibition Load (1.1ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#show (for 127.0.0.1 at 2009-08-24 00:44:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mExhibition Load (0.2ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering exhibitions/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/exhibitions/1]
+
+
+Processing ExhibitionsController#show (for 127.0.0.1 at 2009-08-24 00:44:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mExhibition Load (0.2ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering exhibitions/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/exhibitions/1]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:45:08) [GET]
+  [4;35;1mExhibition Load (1.1ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:45:19) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:45:40) [GET]
+  [4;35;1mExhibition Load (0.9ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 74ms (View: 11, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:45:42) [GET]
+  [4;36;1mExhibition Load (0.8ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#show (for 127.0.0.1 at 2009-08-24 00:45:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering exhibitions/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/exhibitions/1]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:46:20) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:46:24) [GET]
+  [4;35;1mExhibition Load (0.9ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:46:27) [GET]
+  [4;36;1mExhibition Load (1.3ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 72ms (View: 66, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:46:36) [GET]
+  [4;36;1mExhibition Load (1.1ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:24) [GET]
+  [4;35;1mExhibition Load (0.9ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:25) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Create (0.6ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:48:33', '"From the Spoon to the City": Objects by Architects from LACMA''s Collection', 'August 6, 2009–January 24, 2010', 'http://www.lacma.org/art/ExhibSpoontoCity.aspx', '2009-08-24 07:48:33')[0m
+  [4;35;1mExhibition Create (0.4ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:48:33', 'Your Bright Future: 12 Contemporary Artists from Korea', 'June 28–September 20, 2009', 'http://www.lacma.org/art/ExhibFuture.aspx', '2009-08-24 07:48:33')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:48:33', 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples', 'May 3–October 4, 2009', 'http://www.lacma.org/art/ExhibPompeii.aspx', '2009-08-24 07:48:33')[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:48:33', 'Classical Frieze: Eleanor Antin', 'May 14, 2009–October 4, 2009', 'http://www.lacma.org/art/ExhibFrieze.aspx', '2009-08-24 07:48:33')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:48:33', 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection', 'September 18, 2008–September 6, 2009', 'http://www.lacma.org/art/ExhibTextiles.aspx', '2009-08-24 07:48:33')[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:33) [GET]
+  [4;35;1mExhibition Load (1.3ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:39) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"1"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 1) [0m
+  [4;35;1mExhibition Destroy (0.7ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/exhibitions/1]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:40) [GET]
+  [4;36;1mExhibition Load (1.4ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 77ms (View: 10, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:42) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"2"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 2) [0m
+  [4;36;1mExhibition Destroy (0.3ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/2]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:42) [GET]
+  [4;35;1mExhibition Load (1.1ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:44) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"3"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 3) [0m
+  [4;35;1mExhibition Destroy (0.3ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/3]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:44) [GET]
+  [4;36;1mExhibition Load (1.0ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:45) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"4"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 4) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/4]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:45) [GET]
+  [4;35;1mExhibition Load (1.1ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:46) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"5"}
+  [4;36;1mExhibition Load (0.4ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 5) [0m
+  [4;35;1mExhibition Destroy (0.3ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/5]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:46) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:48) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"6"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 6) [0m
+  [4;36;1mExhibition Destroy (0.6ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/6]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:48) [GET]
+  [4;35;1mExhibition Load (1.0ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:49) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"7"}
+  [4;36;1mExhibition Load (0.2ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 7) [0m
+  [4;35;1mExhibition Destroy (0.3ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 7[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 90ms (DB: 1) | 302 Found [http://localhost/exhibitions/7]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:49) [GET]
+  [4;36;1mExhibition Load (0.7ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:51) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"8"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 8) [0m
+  [4;36;1mExhibition Destroy (0.7ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/8]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:51) [GET]
+  [4;35;1mExhibition Load (0.7ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:52) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"9"}
+  [4;36;1mExhibition Load (0.2ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 9) [0m
+  [4;35;1mExhibition Destroy (0.4ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/9]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:52) [GET]
+  [4;36;1mExhibition Load (0.6ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:48:54) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"10"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 10) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/10]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:48:54) [GET]
+  [4;35;1mExhibition Load (0.5ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Create (2.5ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:00', '"From the Spoon to the City": Objects by Architects from LACMA''s Collection', 'August 6, 2009–January 24, 2010', 'http://www.lacma.org/art/ExhibSpoontoCity.aspx', '2009-08-24 07:49:00')[0m
+  [4;35;1mExhibition Create (0.5ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:00', 'Your Bright Future: 12 Contemporary Artists from Korea', 'June 28–September 20, 2009', 'http://www.lacma.org/art/ExhibFuture.aspx', '2009-08-24 07:49:00')[0m
+  [4;36;1mExhibition Create (0.4ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:00', 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples', 'May 3–October 4, 2009', 'http://www.lacma.org/art/ExhibPompeii.aspx', '2009-08-24 07:49:00')[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:00', 'Classical Frieze: Eleanor Antin', 'May 14, 2009–October 4, 2009', 'http://www.lacma.org/art/ExhibFrieze.aspx', '2009-08-24 07:49:00')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:00', 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection', 'September 18, 2008–September 6, 2009', 'http://www.lacma.org/art/ExhibTextiles.aspx', '2009-08-24 07:49:00')[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:01) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Create (0.6ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:07', '"From the Spoon to the City": Objects by Architects from LACMA''s Collection', 'August 6, 2009–January 24, 2010', 'http://www.lacma.org/art/ExhibSpoontoCity.aspx', '2009-08-24 07:49:07')[0m
+  [4;35;1mExhibition Create (0.4ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:07', 'Your Bright Future: 12 Contemporary Artists from Korea', 'June 28–September 20, 2009', 'http://www.lacma.org/art/ExhibFuture.aspx', '2009-08-24 07:49:07')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:07', 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples', 'May 3–October 4, 2009', 'http://www.lacma.org/art/ExhibPompeii.aspx', '2009-08-24 07:49:07')[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:07', 'Classical Frieze: Eleanor Antin', 'May 14, 2009–October 4, 2009', 'http://www.lacma.org/art/ExhibFrieze.aspx', '2009-08-24 07:49:07')[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:07', 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection', 'September 18, 2008–September 6, 2009', 'http://www.lacma.org/art/ExhibTextiles.aspx', '2009-08-24 07:49:07')[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:08) [GET]
+  [4;35;1mExhibition Load (1.2ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:11) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"11"}
+  [4;36;1mExhibition Load (0.4ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 11) [0m
+  [4;35;1mExhibition Destroy (0.4ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 87ms (DB: 1) | 302 Found [http://localhost/exhibitions/11]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:11) [GET]
+  [4;36;1mExhibition Load (1.2ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:12) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"12"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 12) [0m
+  [4;36;1mExhibition Destroy (0.3ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/12]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:13) [GET]
+  [4;35;1mExhibition Load (1.1ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:14) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"13"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 13) [0m
+  [4;35;1mExhibition Destroy (0.4ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/13]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:14) [GET]
+  [4;36;1mExhibition Load (1.1ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:15) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"14"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 14) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/14]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:15) [GET]
+  [4;35;1mExhibition Load (1.1ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:16) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"15"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 15) [0m
+  [4;35;1mExhibition Destroy (0.4ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 15[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/15]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:17) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:18) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"16"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 16) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/16]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:18) [GET]
+  [4;35;1mExhibition Load (0.9ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 83ms (View: 77, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:49:19) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"17"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 17) [0m
+  [4;35;1mExhibition Destroy (0.4ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 17[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/17]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:19) [GET]
+  [4;36;1mExhibition Load (0.8ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.6ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:26', '"From the Spoon to the City": Objects by Architects from LACMA''s Collection', 'August 6, 2009–January 24, 2010', 'http://www.lacma.org/art/ExhibSpoontoCity.aspx', '2009-08-24 07:49:26')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection' AND "exhibitions".id <> 21) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:49:26', 'Your Bright Future: 12 Contemporary Artists from Korea', 'June 28–September 20, 2009', 'http://www.lacma.org/art/ExhibFuture.aspx', '2009-08-24 07:49:26')[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea' AND "exhibitions".id <> 22) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:28) [GET]
+  [4;35;1mExhibition Load (0.8ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:42) [GET]
+  [4;36;1mExhibition Load (1.0ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:49:44) [GET]
+  [4;35;1mExhibition Load (0.8ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:52:57) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"18"}
+  [4;36;1mExhibition Load (0.2ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 18) [0m
+  [4;35;1mExhibition Destroy (0.3ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 18[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/18]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:52:57) [GET]
+  [4;36;1mExhibition Load (0.8ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:52:58) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"19"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 19) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 19[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/19]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:52:59) [GET]
+  [4;35;1mExhibition Load (0.7ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 72ms (View: 68, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.5ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:53:13', 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples', 'May 3–October 4, 2009', 'http://www.lacma.org/art/ExhibPompeii.aspx', '2009-08-24 07:53:13')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples' AND "exhibitions".id <> 23) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 07:53:13', 'Classical Frieze: Eleanor Antin', 'May 14, 2009–October 4, 2009', 'http://www.lacma.org/art/ExhibFrieze.aspx', '2009-08-24 07:53:13')[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin' AND "exhibitions".id <> 24) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:53:14) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:58:33) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"20"}
+  [4;35;1mExhibition Load (0.2ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 20) [0m
+  [4;36;1mExhibition Destroy (0.3ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 20[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/20]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:58:33) [GET]
+  [4;35;1mExhibition Load (0.9ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 00:58:36) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"21"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 21) [0m
+  [4;35;1mExhibition Destroy (0.4ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 21[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/21]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:58:36) [GET]
+  [4;36;1mExhibition Load (0.7ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 00:59:02) [GET]
+  [4;35;1mExhibition Load (0.7ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Create (143.7ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:00:04', '"From the Spoon to the City": Objects by Architects from LACMA''s Collection', 'August 6, 2009–January 24, 2010', 'http://www.lacma.org/art/ExhibSpoontoCity.aspx', '2009-08-24 08:00:04')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection' AND "exhibitions".id <> 25) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:00:05', 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection', 'September 18, 2008–September 6, 2009', 'http://www.lacma.org/art/ExhibTextiles.aspx', '2009-08-24 08:00:05')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection' AND "exhibitions".id <> 26) LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:00:09) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:01:38) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"22"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 22) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 22[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/22]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:01:38) [GET]
+  [4;35;1mExhibition Load (0.8ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 74ms (View: 69, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.5ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:01:52', 'Your Bright Future: 12 Contemporary Artists from Korea', 'June 28–September 20, 2009', 'http://www.lacma.org/art/ExhibFuture.aspx', '2009-08-24 08:01:52')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea' AND "exhibitions".id <> 27) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.3ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:01:53) [GET]
+  [4;36;1mExhibition Load (0.9ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:11:12) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"23"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 23) [0m
+  [4;36;1mExhibition Destroy (0.4ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 23[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/23]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:11:13) [GET]
+  [4;35;1mExhibition Load (0.8ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = '"From the Spoon to the City": Objects by Architects from LACMA''s Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Your Bright Future: 12 Contemporary Artists from Korea') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.5ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:12:12', 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples', 'May 3–October 4, 2009', 'http://www.lacma.org/art/ExhibPompeii.aspx', '2009-08-24 08:12:12')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Pompeii and the Roman Villa: Art and Culture around the Bay of Naples' AND "exhibitions".id <> 28) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Classical Frieze: Eleanor Antin') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Five Centuries of Indonesian Textiles: Selections from the Mary Hunt Kahlenberg Collection') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:12:13) [GET]
+  [4;36;1mExhibition Load (0.8ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Claude Collins-Stracensky') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.6ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:15:26', 'Claude Collins-Stracensky', 'August 1 - October 25, 2009', 'http://hammer.ucla.edu//exhibitions/detail/exhibition_id/166', '2009-08-24 08:15:26')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Claude Collins-Stracensky' AND "exhibitions".id <> 29) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Second Nature: The Valentine-Adelson Collection at the Hammer') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.2ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:15:26', 'Second Nature: The Valentine-Adelson Collection at the Hammer', 'July 19 - October 4, 2009', 'http://hammer.ucla.edu//exhibitions/detail/exhibition_id/164', '2009-08-24 08:15:26')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Second Nature: The Valentine-Adelson Collection at the Hammer' AND "exhibitions".id <> 30) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Larry Johnson') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:15:26', 'Larry Johnson', 'June 21 - September 6, 2009', 'http://hammer.ucla.edu//exhibitions/detail/exhibition_id/161', '2009-08-24 08:15:26')[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Larry Johnson' AND "exhibitions".id <> 31) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Aïda Ruilova') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.2ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:15:26', 'Aïda Ruilova', 'June 16 - September 27, 2009', 'http://hammer.ucla.edu//exhibitions/detail/exhibition_id/159', '2009-08-24 08:15:26')[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Aïda Ruilova' AND "exhibitions".id <> 32) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Nic Hess') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.2ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:15:26', 'Nic Hess', 'May 23 - November 5, 2009', 'http://hammer.ucla.edu//exhibitions/detail/exhibition_id/157', '2009-08-24 08:15:26')[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Nic Hess' AND "exhibitions".id <> 33) LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:15:28) [GET]
+  [4;35;1mExhibition Load (1.2ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:16:27) [GET]
+  [4;36;1mExhibition Load (1.2ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:16:39) [GET]
+  [4;35;1mExhibition Load (1.2ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 78ms (View: 13, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Claude Collins-Stracensky') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Claude Collins-Stracensky') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Second Nature: The Valentine-Adelson Collection at the Hammer') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Second Nature: The Valentine-Adelson Collection at the Hammer') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Larry Johnson') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Larry Johnson') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Aïda Ruilova') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Aïda Ruilova') LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Nic Hess') LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Nic Hess') LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:28:50) [GET]
+  [4;36;1mExhibition Load (1.2ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "exhibitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "date" varchar(255), "url" varchar(255), "museum" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "homes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "museums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "location" varchar(255), "telephone" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090823041634')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090815183556')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090818034904')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Exceptionally Gifted: Recent Donations to the Norton Simon Museum (2002–2008)') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.6ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:33:07', 'Exceptionally Gifted: Recent Donations to the Norton Simon Museum (2002–2008)', 'April 17–August 31, 2009', 'http://www.nortonsimon.org/exhibitions.aspx?id=6', '2009-08-24 08:33:07')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Exceptionally Gifted: Recent Donations to the Norton Simon Museum (2002–2008)' AND "exhibitions".id <> 34) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Sweets & Treats: Wayne Thiebaud in the Collection of the Norton Simon Museum') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:33:07', 'Sweets & Treats: Wayne Thiebaud in the Collection of the Norton Simon Museum', 'June 26–November 2, 2009', 'http://www.nortonsimon.org/exhibitions.aspx?id=6', '2009-08-24 08:33:07')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Sweets & Treats: Wayne Thiebaud in the Collection of the Norton Simon Museum' AND "exhibitions".id <> 35) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Divine Demons: Wrathful Deities of Buddhist Art') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:33:07', 'Divine Demons: Wrathful Deities of Buddhist Art', 'August 14, 2009–March 8, 2010', 'http://www.nortonsimon.org/exhibitions.aspx?id=6', '2009-08-24 08:33:07')[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Divine Demons: Wrathful Deities of Buddhist Art' AND "exhibitions".id <> 36) LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:33:09) [GET]
+  [4;35;1mExhibition Load (1.5ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Illumination') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.8ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:33:44', 'Illumination', 'may 3, 09 - sep 13, 09', 'http://www.ocma.net/index.html?page=current', '2009-08-24 08:33:44')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Illumination' AND "exhibitions".id <> 37) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'H BOX') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.2ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:33:44', 'H BOX', 'apr 12, 09 - sep 6, 09', 'http://www.ocma.net/index.html?page=current', '2009-08-24 08:33:44')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'H BOX' AND "exhibitions".id <> 38) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'The Moving Image: Scan to Screen, Pixel to Projection') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:33:44', 'The Moving Image: Scan to Screen, Pixel to Projection', 'apr 12, 09 - sep 27, 09', 'http://www.ocma.net/index.html?page=current', '2009-08-24 08:33:44')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'The Moving Image: Scan to Screen, Pixel to Projection' AND "exhibitions".id <> 39) LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:33:45) [GET]
+  [4;36;1mExhibition Load (1.7ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Noah’s Ark at the Skirball') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.6ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Noah’s Ark at the Skirball', 'Ongoing', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=28', '2009-08-24 08:36:18')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Noah’s Ark at the Skirball' AND "exhibitions".id <> 40) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Visions and Values: Jewish Life from Antiquity to America') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Visions and Values: Jewish Life from Antiquity to America', 'Ongoing', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=21', '2009-08-24 08:36:18')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Visions and Values: Jewish Life from Antiquity to America' AND "exhibitions".id <> 41) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Greeting the New Year') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Greeting the New Year', 'September 8 through October 25, 2009', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=39', '2009-08-24 08:36:18')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Greeting the New Year' AND "exhibitions".id <> 42) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Images for Human Rights: Student Voices') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.2ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Images for Human Rights: Student Voices', 'October 13, 2009 through March 14, 2010', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=37', '2009-08-24 08:36:18')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Images for Human Rights: Student Voices' AND "exhibitions".id <> 43) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Road to Freedom: Photographs of the Civil Rights Movement, 1956–1968') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.2ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Road to Freedom: Photographs of the Civil Rights Movement, 1956–1968', 'November 19, 2009 through March 7, 2010', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=36', '2009-08-24 08:36:18')[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Road to Freedom: Photographs of the Civil Rights Movement, 1956–1968' AND "exhibitions".id <> 44) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Breach of Peace: Photographs of Freedom Riders by Eric Etheridge') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Breach of Peace: Photographs of Freedom Riders by Eric Etheridge', 'November 19, 2009 through May 9, 2010', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=38', '2009-08-24 08:36:18')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Breach of Peace: Photographs of Freedom Riders by Eric Etheridge' AND "exhibitions".id <> 45) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Making Faces: Playful Portraits of People You Know by Hanoch Piven') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:36:18', 'Making Faces: Playful Portraits of People You Know by Hanoch Piven', 'March 10 through August 29, 2010', 'index.php?option=com_ccevents&scope=exbt&task=detail&oid=40', '2009-08-24 08:36:18')[0m
+  [4;36;1mExhibition Exists (0.3ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Making Faces: Playful Portraits of People You Know by Hanoch Piven' AND "exhibitions".id <> 46) LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:36:20) [GET]
+  [4;35;1mExhibition Load (2.2ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-24 01:36:29) [GET]
+  Parameters: {"scope"=>"exbt", "option"=>"com_ccevents", "task"=>"detail", "oid"=>"36"}
+
+ActionController::RoutingError (No route matches "/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:33) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"40"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 40) [0m
+  [4;35;1mExhibition Destroy (0.5ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 40[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/40]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:33) [GET]
+  [4;36;1mExhibition Load (2.0ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:35) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"41"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 41) [0m
+  [4;36;1mExhibition Destroy (0.3ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 41[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/41]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:35) [GET]
+  [4;35;1mExhibition Load (2.1ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:36) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"42"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 42) [0m
+  [4;35;1mExhibition Destroy (0.3ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 42[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/42]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:37) [GET]
+  [4;36;1mExhibition Load (2.0ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:38) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"43"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 43) [0m
+  [4;36;1mExhibition Destroy (0.5ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 43[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/43]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:38) [GET]
+  [4;35;1mExhibition Load (1.9ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:39) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"44"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 44) [0m
+  [4;35;1mExhibition Destroy (0.3ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 44[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/44]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:39) [GET]
+  [4;36;1mExhibition Load (1.8ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:40) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"45"}
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 45) [0m
+  [4;36;1mExhibition Destroy (0.3ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 45[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/exhibitions/45]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:41) [GET]
+  [4;35;1mExhibition Load (1.8ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#destroy (for 127.0.0.1 at 2009-08-24 01:37:42) [DELETE]
+  Parameters: {"authenticity_token"=>"PX0B/NJbBhVp6pK6v8OXQpalQiRgTgsZzYl85t6WbLg=", "id"=>"46"}
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 46) [0m
+  [4;35;1mExhibition Destroy (0.5ms)[0m   [0mDELETE FROM "exhibitions" WHERE "id" = 46[0m
+Redirected to http://localhost:3000/exhibitions
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/exhibitions/46]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:37:42) [GET]
+  [4;36;1mExhibition Load (1.6ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/exhibitions]
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Noah’s Ark at the Skirball') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.6ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:06', 'Noah’s Ark at the Skirball', 'Ongoing', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=28', '2009-08-24 08:38:06')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Noah’s Ark at the Skirball' AND "exhibitions".id <> 47) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Visions and Values: Jewish Life from Antiquity to America') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:07', 'Visions and Values: Jewish Life from Antiquity to America', 'Ongoing', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=21', '2009-08-24 08:38:07')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Visions and Values: Jewish Life from Antiquity to America' AND "exhibitions".id <> 48) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Greeting the New Year') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:07', 'Greeting the New Year', 'September 8 through October 25, 2009', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=39', '2009-08-24 08:38:07')[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Greeting the New Year' AND "exhibitions".id <> 49) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Images for Human Rights: Student Voices') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.2ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:07', 'Images for Human Rights: Student Voices', 'October 13, 2009 through March 14, 2010', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=37', '2009-08-24 08:38:07')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Images for Human Rights: Student Voices' AND "exhibitions".id <> 50) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Road to Freedom: Photographs of the Civil Rights Movement, 1956–1968') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:07', 'Road to Freedom: Photographs of the Civil Rights Movement, 1956–1968', 'November 19, 2009 through March 7, 2010', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=36', '2009-08-24 08:38:07')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Road to Freedom: Photographs of the Civil Rights Movement, 1956–1968' AND "exhibitions".id <> 51) LIMIT 1[0m
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Breach of Peace: Photographs of Freedom Riders by Eric Etheridge') LIMIT 1[0m
+  [4;36;1mExhibition Create (0.3ms)[0m   [0;1mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:07', 'Breach of Peace: Photographs of Freedom Riders by Eric Etheridge', 'November 19, 2009 through May 9, 2010', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=38', '2009-08-24 08:38:07')[0m
+  [4;35;1mExhibition Exists (0.2ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Breach of Peace: Photographs of Freedom Riders by Eric Etheridge' AND "exhibitions".id <> 52) LIMIT 1[0m
+  [4;36;1mExhibition Exists (0.1ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Making Faces: Playful Portraits of People You Know by Hanoch Piven') LIMIT 1[0m
+  [4;35;1mExhibition Create (0.3ms)[0m   [0mINSERT INTO "exhibitions" ("museum", "updated_at", "title", "date", "url", "created_at") VALUES(NULL, '2009-08-24 08:38:07', 'Making Faces: Playful Portraits of People You Know by Hanoch Piven', 'March 10 through August 29, 2010', 'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=detail&oid=40', '2009-08-24 08:38:07')[0m
+  [4;36;1mExhibition Exists (0.2ms)[0m   [0;1mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."title" = 'Making Faces: Playful Portraits of People You Know by Hanoch Piven' AND "exhibitions".id <> 53) LIMIT 1[0m
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:38:08) [GET]
+  [4;35;1mExhibition Load (2.2ms)[0m   [0mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/exhibitions]
+
+
+Processing ExhibitionsController#index (for 127.0.0.1 at 2009-08-24 01:38:29) [GET]
+  [4;36;1mExhibition Load (2.6ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 27ms (View: 18, DB: 3) | 200 OK [http://localhost/exhibitions]

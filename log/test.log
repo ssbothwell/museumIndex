@@ -1,0 +1,76 @@
+Unable to load home, underlying cause no such file to load -- home 
+
+ /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:158:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:265:in `require_or_load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:224:in `depend_on'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:136:in `require_dependency'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/fixtures.rb:850:in `try_to_load_dependency'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/fixtures.rb:862:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/fixtures.rb:862:in `require_fixture_classes'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/fixtures.rb:845:in `fixtures'
+./test/test_helper.rb:35
+./test/functional/exhibitions_controller_test.rb:1:in `require'
+./test/functional/exhibitions_controller_test.rb:1
+/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" LIMIT 1[0m
+
+
+Processing ExhibitionsController#destroy (for 0.0.0.0 at 2009-08-24 01:30:24) [DELETE]
+  Parameters: {"id"=>#<Exhibition id: 953125641, title: "MyString", date: "MyString", url: "MyString", museum: "MyString", created_at: "2009-08-24 08:30:24", updated_at: "2009-08-24 08:30:24">}
+  [4;35;1mExhibition Load (0.2ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 953125641) [0m
+  [4;36;1mExhibition Destroy (0.3ms)[0m   [0;1mDELETE FROM "exhibitions" WHERE "id" = 953125641[0m
+Redirected to http://test.host/exhibitions
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/exhibitions/953125641]
+  [4;35;1mExhibition Exists (0.1ms)[0m   [0mSELECT "exhibitions".id FROM "exhibitions" WHERE ("exhibitions"."id" = 953125641) LIMIT 1[0m
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" LIMIT 1[0m
+
+
+Processing ExhibitionsController#edit (for 0.0.0.0 at 2009-08-24 01:30:24) [GET]
+  Parameters: {"id"=>#<Exhibition id: 953125641, title: "MyString", date: "MyString", url: "MyString", museum: "MyString", created_at: "2009-08-24 08:30:24", updated_at: "2009-08-24 08:30:24">}
+  [4;35;1mExhibition Load (0.2ms)[0m   [0mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 953125641) [0m
+Rendering template within layouts/application
+Rendering exhibitions/edit
+Rendered exhibitions/_form (2.8ms)
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/exhibitions/953125641/edit]
+
+
+Processing ExhibitionsController#index (for 0.0.0.0 at 2009-08-24 01:30:24) [GET]
+  [4;36;1mExhibition Load (0.3ms)[0m   [0;1mSELECT * FROM "exhibitions" [0m
+Rendering template within layouts/application
+Rendering exhibitions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/exhibitions]
+
+
+Processing ExhibitionsController#new (for 0.0.0.0 at 2009-08-24 01:30:24) [GET]
+Rendering template within layouts/application
+Rendering exhibitions/new
+Rendered exhibitions/_form (1.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/exhibitions/new]
+  [4;35;1mExhibition Load (0.3ms)[0m   [0mSELECT * FROM "exhibitions" LIMIT 1[0m
+
+
+Processing ExhibitionsController#show (for 0.0.0.0 at 2009-08-24 01:30:24) [GET]
+  Parameters: {"id"=>#<Exhibition id: 953125641, title: "MyString", date: "MyString", url: "MyString", museum: "MyString", created_at: "2009-08-24 08:30:24", updated_at: "2009-08-24 08:30:24">}
+  [4;36;1mExhibition Load (0.2ms)[0m   [0;1mSELECT * FROM "exhibitions" WHERE ("exhibitions"."id" = 953125641) [0m
+Rendering template within layouts/application
+Rendering exhibitions/show
+Completed in 53ms (View: 53, DB: 0) | 200 OK [http://test.host/exhibitions/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "museums" [0m
+
+
+Processing MuseumsController#create (for 0.0.0.0 at 2009-08-24 01:30:24) [POST]
+  Parameters: {"museum"=>{}}
+  [4;36;1mMuseum Create (0.5ms)[0m   [0;1mINSERT INTO "museums" ("name", "updated_at", "telephone", "location", "created_at") VALUES(NULL, '2009-08-24 08:30:24', NULL, NULL, '2009-08-24 08:30:24')[0m
+Redirected to http://test.host/museums/1
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/museums?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "museums" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "museums" [0m
+
+
+Processing MuseumsController#index (for 0.0.0.0 at 2009-08-24 01:30:24) [GET]
