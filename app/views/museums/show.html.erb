@@ -1,3 +1,26 @@
+<% title "Museum" %>
 
-<%= link_to 'Edit', edit_museum_path(@museum) %> |
-<%= link_to 'Back', museums_path %>
+<p>
+  <strong>Name:</strong>
+  <%=h @museum.name %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%=h @museum.location %>
+</p>
+<p>
+  <strong>Telephone:</strong>
+  <%=h @museum.telephone %>
+</p>
+
+  <ul><strong>Current Exhibitions:</strong>
+    <% @museum.exhibitions.each do |l| %>
+    <li><%= l.title %></li>
+    <% end %>
+  </ul>  
+
+<p>
+  <%= link_to "Edit", edit_museum_path(@museum) %> |
+  <%= link_to "Destroy", @museum, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", museums_path %>
+</p>

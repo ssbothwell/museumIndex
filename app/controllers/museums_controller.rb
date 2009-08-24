@@ -1,8 +1,4 @@
 class MuseumsController < ApplicationController
-  before_filter [:ExtractorLacma, :ExtractorHammer, :ExtractorOCMA, :ExtractorNortonSimon, :extractorGettyCenter, :extractorSkirball],
-    :only => [:index]
-    
-
   # GET /museums
   # GET /museums.xml
   def index

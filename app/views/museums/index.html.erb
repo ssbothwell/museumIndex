@@ -1,41 +1,21 @@
-<div class="museum">
-  <h3>Los Angeles County Museum Of Art</h3>
-  <% @LACMA.each do |l| %>
-  	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
-  	<p class="date"><%= l[:date] %></p>
+<% title "Museums" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Telephone</th>
+  </tr>
+  <% for museum in @museums %>
+    <tr>
+      <td><%=h museum.name %></td>
+      <td><%=h museum.location %></td>
+      <td><%=h museum.telephone %></td>
+      <td><%= link_to "Show", museum %></td>
+      <td><%= link_to "Edit", edit_museum_path(museum) %></td>
+      <td><%= link_to "Destroy", museum, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
   <% end %>
-</div>
-<div class="museum">
-  <h3>Hammer Museum</h3>
-  <% @Hammer.each do |l| %>
-  	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
-    <p class="date"><%= l[:date] %></p>
-  <% end %>
-</div>
-<div class="museum">
-  <h3>Orange County Museum Of Art</h3>
-  <% @OCMA.each do |l| %>
-  	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
-  	<p class="date"><%= l[:date] %></p>
-  <% end %>
-</div>
-<div class="museum">
-  <h3>Norton Simon Museum</h3>
-  <% @NortonSimon.each do |l| %>
-  	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
-  	<p class="date"><%= l[:date] %></p>
-  <% end %>
-</div>
-<div class="museum">
-  <h3>Getty Center Los Angeles</h3>
-  <% @GettyCenter.each do |l| %>
-  	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
-  <% end %>
-</div>
-<div class="museum">
-  <h3>Skirball Museum</h3>
-  <% @Skirball.each do |l| %>
-  	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
-  	<p class="date"><%= l[:date] %></p>
-  <% end %>
-</div>
+</table>
+
+<p><%= link_to "New Museum", new_museum_path %></p>

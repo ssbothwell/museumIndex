@@ -1,12 +1,8 @@
-<h1>Editing museum</h1>
+<% title "Edit Museum" %>
 
-<% form_for(@museum) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => 'form' %>
 
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @museum %> |
-<%= link_to 'Back', museums_path %>
+<p>
+  <%= link_to "Show", @museum %> |
+  <%= link_to "View All", museums_path %>
+</p>

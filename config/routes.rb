@@ -1,9 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :exhibitions
-
-  map.resources :exhibitions
-
   map.resources :museums
+
+  map.resources :exhibitions
 
   # The priority is based upon order of creation: first created -> highest priority.
 

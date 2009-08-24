@@ -9,15 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090823041634) do
+ActiveRecord::Schema.define(:version => 20090824093427) do
 
   create_table "exhibitions", :force => true do |t|
     t.string   "title"
     t.string   "date"
     t.string   "url"
-    t.string   "museum"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "museum_id"
   end
 
   create_table "homes", :force => true do |t|

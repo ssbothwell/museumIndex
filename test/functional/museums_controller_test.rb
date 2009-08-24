@@ -1,45 +1,54 @@
 require 'test_helper'
 
 class MuseumsControllerTest < ActionController::TestCase
-  test "should get index" do
+  def test_index
     get :index
-    assert_response :success
-    assert_not_nil assigns(:museums)
+    assert_template 'index'
   end
-
-  test "should get new" do
+  
+  def test_show
+    get :show, :id => Museum.first
+    assert_template 'show'
+  end
+  
+  def test_new
     get :new
-    assert_response :success
+    assert_template 'new'
   end
-
-  test "should create museum" do
-    assert_difference('Museum.count') do
-      post :create, :museum => { }
-    end
-
-    assert_redirected_to museum_path(assigns(:museum))
+  
+  def test_create_invalid
+    Museum.any_instance.stubs(:valid?).returns(false)
+    post :create
+    assert_template 'new'
   end
-
-  test "should show museum" do
-    get :show, :id => museums(:one).to_param
-    assert_response :success
+  
+  def test_create_valid
+    Museum.any_instance.stubs(:valid?).returns(true)
+    post :create
+    assert_redirected_to museum_url(assigns(:museum))
   end
-
-  test "should get edit" do
-    get :edit, :id => museums(:one).to_param
-    assert_response :success
+  
+  def test_edit
+    get :edit, :id => Museum.first
+    assert_template 'edit'
   end
-
-  test "should update museum" do
-    put :update, :id => museums(:one).to_param, :museum => { }
-    assert_redirected_to museum_path(assigns(:museum))
+  
+  def test_update_invalid
+    Museum.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Museum.first
+    assert_template 'edit'
   end
-
-  test "should destroy museum" do
-    assert_difference('Museum.count', -1) do
-      delete :destroy, :id => museums(:one).to_param
-    end
-
-    assert_redirected_to museums_path
+  
+  def test_update_valid
+    Museum.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Museum.first
+    assert_redirected_to museum_url(assigns(:museum))
+  end
+  
+  def test_destroy
+    museum = Museum.first
+    delete :destroy, :id => museum
+    assert_redirected_to museums_url
+    assert !Museum.exists?(museum.id)
   end
 end

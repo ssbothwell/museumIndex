@@ -19,6 +19,7 @@ namespace :extractor do
     DataHash = ExtractorLACMA.to_hash
     DataHash.each do |l|
       l[:date], foo = l[:date].split(" | ") 
+      l[:museum_id] = "1"
     end
   
     DataHash.each do |l|
@@ -44,6 +45,7 @@ namespace :extractor do
     DataHash = ExtractorHammer.to_hash
     DataHash.each do |l|
       l[:url] = "http://hammer.ucla.edu/" + l[:url]
+      l[:museum_id] = "2"
     end
     
     DataHash.each do |l|
@@ -65,6 +67,7 @@ namespace :extractor do
     DataHash = ExtractorOCMA.to_hash
     DataHash.each do |l|
       l[:url] = "http://www.ocma.net/index.html?page=current"
+      l[:museum_id] = "5"
     end
     
     DataHash.each do |l|
@@ -86,6 +89,7 @@ namespace :extractor do
     DataHash = ExtractorNortonSimon.to_hash
     DataHash.each do |l|
       l[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6"
+      l[:museum_id] = "3"
     end
     
     DataHash.each do |l|
@@ -108,6 +112,7 @@ namespace :extractor do
     DataHash = ExtractorSkirball.to_hash
     DataHash.each do |l|
       l[:url] = "http://www.skirball.org/" + l[:url]
+      l[:museum_id] = "4"
     end
 
     DataHash.each do |l|
@@ -125,4 +130,6 @@ namespace :extractor do
     DataHash = ExtractorGettyCenter.to_hash
   end
   
+  task :all => [:lacma, :hammer, :ocma, :nortonSimon, :skirball]
+
 end
