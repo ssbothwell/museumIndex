@@ -87,29 +87,4 @@ class MuseumsController < ApplicationController
     end
   end
   
-  private
-    
-  def extractorGettyCenter
-    @ExtractorGettyCenter = Scrubyt::Extractor.define do
-      fetch          'http://www.getty.edu/museum/exhibitions'
-
-        title "//td[1]/div/table[2]//tr/td//p/a[1]"
-    end
-    @GettyCenter = @ExtractorGettyCenter.to_hash
-  end
-  
-  def extractorSkirball
-    @ExtractorSkirball = Scrubyt::Extractor.define do
-      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
-      exhibition "//div[1]/table//tr/td/h4/a", :generalize => false do
-        url "href", :type => :attribute
-        exhibition_details do
-          title "//h4[@class='program']"
-          date "//div[@class='event']/div[@class='event_info']/div[@class='time']/p[1]"
-        end
-      end
-    end
-    @Skirball = @ExtractorSkirball.to_hash
-  end
-
 end
