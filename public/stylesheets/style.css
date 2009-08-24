@@ -49,9 +49,9 @@ ul#location li {
 
 .museum {
 	float: left;
-	width: 40%;
-	height: 100%;
-	margin: 0 40px;
+	width: auto;
+	height: auto;
+	margin: 10px 40px;
 	padding-bottom: 0;
 
 }

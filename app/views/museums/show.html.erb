@@ -1,17 +1,18 @@
 <% title "Museum" %>
 
+<div class="museum">
+  <%= image_tag @museum.photo.url(:small) %>
+  <br />
+
 <p>
   <strong>Name:</strong>
-  <%=h @museum.name %>
-</p>
-<p>
+  <%=h @museum.name %><br />
   <strong>Location:</strong>
-  <%=h @museum.location %>
-</p>
-<p>
+  <%=h @museum.location %><br />
   <strong>Telephone:</strong>
   <%=h @museum.telephone %>
 </p>
+</div>
 
   <ul><strong>Current Exhibitions:</strong>
     <% @museum.exhibitions.each do |l| %>
