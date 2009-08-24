@@ -4830,3 +4830,1947 @@ Processing MuseumsController#index (for 127.0.0.1 at 2009-08-18 12:28:53) [GET]
 Rendering template within layouts/application
 Rendering museums/index
 Completed in 5115ms (View: 12, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 17:51:28) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:93: dynamic constant assignment
+    ExhibitionsLacma = Scrubyt::Extractor.define do
+                      ^):
+  
+
+Rendered rescues/_trace (32.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 17:51:29) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:93: dynamic constant assignment
+    ExhibitionsLacma = Scrubyt::Extractor.define do
+                      ^):
+  
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:51:47) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6336ms (View: 154, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:51:53) [GET]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:52:03) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 10836ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 17:55:08) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:93: dynamic constant assignment
+    ExhibitionsLacma = Scrubyt::Extractor.define do
+                      ^):
+  
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:55:15) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4384ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:55:32) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4944ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 17:55:54) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:100: dynamic constant assignment
+      LACMA = @ExhibitionsLacma.to_hash
+             ^):
+  
+
+Rendered rescues/_trace (89.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:56:02) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4767ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:58:33) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:59:24) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:59:26) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (34.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:59:35) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:59:36) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 17:59:51) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (98.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:00:05) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (100.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:00:09) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash):
+  app/controllers/museums_controller.rb:111:in `ExtractorHammer'
+
+Rendered rescues/_trace (101.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:00:34) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash) on line #9 of app/views/museums/index.html.erb:
+6: </div>
+7: <div class="museum">
+8:   <h3>Hammer Museum</h3>
+9:   <% @ExhibitionsHammer.to_hash.each do |exhibitionHammer| %>
+10:   	<%= link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+11:   <% end %>
+12: </div>
+
+    app/views/museums/index.html.erb:9
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (106.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:01:15) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (undefined method `to_hash' for #<Array:0x250f968>) on line #9 of app/views/museums/index.html.erb:
+6: </div>
+7: <div class="museum">
+8:   <h3>Hammer Museum</h3>
+9:   <% @HAMMER.to_hash.each do |exhibitionHammer| %>
+10:   	<%= link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+11:   <% end %>
+12: </div>
+
+    app/views/museums/index.html.erb:9
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (109.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:01:45) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5139ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:02:33) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_hash) on line #21 of app/views/museums/index.html.erb:
+18: </div>
+19: <div class="museum">
+20:   <h3>Norton Simon Museum</h3>
+21:   <% @ExhibitionsNorton.to_hash.each do |exhibitionNorton| %>
+22:   	<%= link_to exhibitionNorton[:link_title], exhibitionNorton[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+23:   <% end %>
+24: </div>
+
+    app/views/museums/index.html.erb:21
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (45.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:02:42) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5061ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:03:09) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5396ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:03:20) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5116ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:31:20) [GET]
+
+NoMethodError (undefined method `url=' for #<Hash:0x269ab34>):
+  app/controllers/museums_controller.rb:155:in `extractorSkirball'
+  app/controllers/museums_controller.rb:154:in `each'
+  app/controllers/museums_controller.rb:154:in `extractorSkirball'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 18:31:40) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:155: syntax error, unexpected tASSOC, expecting kEND
+      concat[:url] => "test"
+                     ^):
+  
+
+Rendered rescues/_trace (96.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:35:12) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5273ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:35:28) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4932ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 18:36:03) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:155: syntax error, unexpected tASSOC, expecting kEND
+      concat.url => "test"
+                   ^):
+  
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:36:07) [GET]
+
+NoMethodError (undefined method `url=' for #<Hash:0x258cfa8>):
+  app/controllers/museums_controller.rb:155:in `extractorSkirball'
+  app/controllers/museums_controller.rb:154:in `each'
+  app/controllers/museums_controller.rb:154:in `extractorSkirball'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:36:12) [GET]
+
+NoMethodError (undefined method `url=' for #<Hash:0x256fb24>):
+  app/controllers/museums_controller.rb:155:in `extractorSkirball'
+  app/controllers/museums_controller.rb:154:in `each'
+  app/controllers/museums_controller.rb:154:in `extractorSkirball'
+
+Rendered rescues/_trace (34.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:36:22) [GET]
+
+NoMethodError (undefined method `url' for #<Hash:0x24ab7c4>):
+  app/controllers/museums_controller.rb:155:in `extractorSkirball'
+  app/controllers/museums_controller.rb:154:in `each'
+  app/controllers/museums_controller.rb:154:in `extractorSkirball'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:37:59) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5688ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:39:00) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5967ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:39:51) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5183ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:39:58) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5106ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:40:21) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5276ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:41:15) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5349ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:41:25) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4200ms (View: 60, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:41:34) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4364ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:41:48) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5207ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:42:33) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+ERROR: compiling _run_erb_app47views47museums47index46html46erb RAISED compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:34: syntax error, unexpected tASSOC, expecting ')'
+@output_buffer.concat "    "; @output_buffer.concat(( exhibitionSkirball[:url] => "http://www.google.com" ).to_s); @output_buffer.concat "\n"
+                                                                                 ^
+Function body:           def _run_erb_app47views47museums47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Los Angeles County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @LACMA.each do |exhibition| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibition[:link_title], exhibition[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Hammer Museum</h3>\n"
+@output_buffer.concat "  ";  @HAMMER.each do |exhibitionHammer| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Orange County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @OCMA.each do |exhibitionOCMA| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionOCMA[:link_title], exhibitionOCMA[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Norton Simon Museum</h3>\n"
+@output_buffer.concat "  ";  @NortonSimon.each do |exhibitionNorton| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionNorton[:link_title], exhibitionNorton[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Getty Center Los Angeles</h3>\n"
+@output_buffer.concat "  ";  @GettyCenter.each do |exhibitionGetty| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionGetty[:link_title], exhibitionGetty[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Skirball Museum</h3>\n"
+@output_buffer.concat "  ";  @Skirball.each do |exhibitionSkirball| ; @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat(( exhibitionSkirball[:url] => "http://www.google.com" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:11:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:34: syntax error, unexpected tASSOC, expecting ')'
+@output_buffer.concat "    "; @output_buffer.concat(( exhibitionSkirball[:url] => "http://www.google.com" ).to_s); @output_buffer.concat "\n"
+                                                                                 ^) on line #34 of app/views/museums/index.html.erb:
+31: <div class="museum">
+32:   <h3>Skirball Museum</h3>
+33:   <% @Skirball.each do |exhibitionSkirball| %>
+34:     <%= exhibitionSkirball[:url] => "http://www.google.com" %>
+35:   	<%= link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+36:   <% end %>
+37: </div>
+
+    app/views/museums/index.html.erb:40:in `compile!'
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:44:50) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (undefined method `url=' for #<Hash:0x261bbb8>) on line #34 of app/views/museums/index.html.erb:
+31: <div class="museum">
+32:   <h3>Skirball Museum</h3>
+33:   <% @Skirball.each do |exhibitionSkirball| %>
+34:     <%= exhibitionSkirball.url = "http://www.google.com" %>
+35:   	<%= link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+36:   <% end %>
+37: </div>
+
+    app/views/museums/index.html.erb:34
+    app/views/museums/index.html.erb:33:in `each'
+    app/views/museums/index.html.erb:33
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:45:08) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5490ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:45:22) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4877ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:45:54) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5135ms (View: 69, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:46:26) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5359ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:46:38) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4776ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:47:03) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+ERROR: compiling _run_erb_app47views47museums47index46html46erb RAISED compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:34: syntax error, unexpected tASSOC, expecting kEND
+@output_buffer.concat "    ";  exhibitionSkirball[:url] => "http://www.google.com" ; @output_buffer.concat "\n"
+                                                          ^
+Function body:           def _run_erb_app47views47museums47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Los Angeles County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @LACMA.each do |exhibition| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibition[:link_title], exhibition[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Hammer Museum</h3>\n"
+@output_buffer.concat "  ";  @HAMMER.each do |exhibitionHammer| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Orange County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @OCMA.each do |exhibitionOCMA| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionOCMA[:link_title], exhibitionOCMA[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Norton Simon Museum</h3>\n"
+@output_buffer.concat "  ";  @NortonSimon.each do |exhibitionNorton| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionNorton[:link_title], exhibitionNorton[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Getty Center Los Angeles</h3>\n"
+@output_buffer.concat "  ";  @GettyCenter.each do |exhibitionGetty| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionGetty[:link_title], exhibitionGetty[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Skirball Museum</h3>\n"
+@output_buffer.concat "  ";  @Skirball.each do |exhibitionSkirball| ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  exhibitionSkirball[:url] => "http://www.google.com" ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:11:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:34: syntax error, unexpected tASSOC, expecting kEND
+@output_buffer.concat "    ";  exhibitionSkirball[:url] => "http://www.google.com" ; @output_buffer.concat "\n"
+                                                          ^) on line #34 of app/views/museums/index.html.erb:
+31: <div class="museum">
+32:   <h3>Skirball Museum</h3>
+33:   <% @Skirball.each do |exhibitionSkirball| %>
+34:     <% exhibitionSkirball[:url] => "http://www.google.com" %>
+35:   	<%= link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+36:   <% end %>
+37: </div>
+
+    app/views/museums/index.html.erb:40:in `compile!'
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:47:16) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+ERROR: compiling _run_erb_app47views47museums47index46html46erb RAISED compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:34: syntax error, unexpected tASSOC, expecting kEND
+@output_buffer.concat "    ";  exhibitionSkirball[ 'url' ] => "http://www.google.com" ; @output_buffer.concat "\n"
+                                                             ^
+Function body:           def _run_erb_app47views47museums47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Los Angeles County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @LACMA.each do |exhibition| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibition[:link_title], exhibition[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Hammer Museum</h3>\n"
+@output_buffer.concat "  ";  @HAMMER.each do |exhibitionHammer| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionHammer[:link_title], exhibitionHammer[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Orange County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @OCMA.each do |exhibitionOCMA| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionOCMA[:link_title], exhibitionOCMA[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Norton Simon Museum</h3>\n"
+@output_buffer.concat "  ";  @NortonSimon.each do |exhibitionNorton| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionNorton[:link_title], exhibitionNorton[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Getty Center Los Angeles</h3>\n"
+@output_buffer.concat "  ";  @GettyCenter.each do |exhibitionGetty| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionGetty[:link_title], exhibitionGetty[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Skirball Museum</h3>\n"
+@output_buffer.concat "  ";  @Skirball.each do |exhibitionSkirball| ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  exhibitionSkirball[ 'url' ] => "http://www.google.com" ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:11:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:34: syntax error, unexpected tASSOC, expecting kEND
+@output_buffer.concat "    ";  exhibitionSkirball[ 'url' ] => "http://www.google.com" ; @output_buffer.concat "\n"
+                                                             ^) on line #34 of app/views/museums/index.html.erb:
+31: <div class="museum">
+32:   <h3>Skirball Museum</h3>
+33:   <% @Skirball.each do |exhibitionSkirball| %>
+34:     <% exhibitionSkirball[ 'url' ] => "http://www.google.com" %>
+35:   	<%= link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+36:   <% end %>
+37: </div>
+
+    app/views/museums/index.html.erb:40:in `compile!'
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:47:25) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4997ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:47:47) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6436ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:48:16) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (can't convert Array into String) on line #34 of app/views/museums/index.html.erb:
+31: <div class="museum">
+32:   <h3>Skirball Museum</h3>
+33:   <% @Skirball.each do |exhibitionSkirball| %>
+34:     <% exhibitionSkirball[ :url ] = "http://www.skirball.org" + [:url] %>
+35:   	<%= link_to exhibitionSkirball[:link_title], exhibitionSkirball[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+36:   <% end %>
+37: </div>
+
+    app/views/museums/index.html.erb:34:in `+'
+    app/views/museums/index.html.erb:34
+    app/views/museums/index.html.erb:33:in `each'
+    app/views/museums/index.html.erb:33
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (45.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:49:14) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6368ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:49:31) [GET]
+  [4;36;1mMuseum Load (0.8ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4448ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 18:54:20) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:154: dynamic constant assignment
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:155: syntax error, unexpected '>'):
+  
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 18:54:25) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:154: dynamic constant assignment):
+  
+
+Rendered rescues/_trace (95.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:54:49) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5462ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:55:10) [GET]
+  [4;36;1mMuseum Load (1.0ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4968ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:57:28) [GET]
+
+TypeError (can't convert Array into String):
+  app/controllers/museums_controller.rb:124:in `+'
+  app/controllers/museums_controller.rb:124:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:123:in `each'
+  app/controllers/museums_controller.rb:123:in `ExtractorOCMA'
+
+Rendered rescues/_trace (103.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:57:51) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 8049ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:58:28) [GET]
+
+TypeError (can't convert Array into String):
+  app/controllers/museums_controller.rb:124:in `+'
+  app/controllers/museums_controller.rb:124:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:123:in `each'
+  app/controllers/museums_controller.rb:123:in `ExtractorOCMA'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:58:39) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5296ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:59:06) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5142ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 18:59:51) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4773ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:00:32) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5299ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:09:05) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5345ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:09:30) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5414ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:09:42) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5236ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:10:16) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6165ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:12:28) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5027ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:13:28) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:251:in `evaluate'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:248:in `each'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:248:in `evaluate'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:279:in `evaluate'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:275:in `each'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:275:in `evaluate'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:270:in `each'
+  scrubyt (0.4.06) lib/scrubyt/core/scraping/pattern.rb:270:in `evaluate'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:137:in `evaluate_extractor'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:136:in `each'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:136:in `evaluate_extractor'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:133:in `loop'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:133:in `evaluate_extractor'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:132:in `catch'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:132:in `evaluate_extractor'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:85:in `initialize'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:32:in `new'
+  scrubyt (0.4.06) lib/scrubyt/core/shared/extractor.rb:32:in `define'
+  app/controllers/museums_controller.rb:146:in `extractorGettyCenter'
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-21 19:13:48) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5133ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:06:21) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6259ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:08:59) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6130ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:09:28) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 4126ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:10:02) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5177ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:10:15) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5719ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:10:43) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+ERROR: compiling _run_erb_app47views47museums47index46html46erb RAISED compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:5: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+@output_buffer.concat "  \t"; @output_buffer.concat(( l[:date], {:style => "font-size: 13px"} ).to_s); @output_buffer.concat "<br />\n"
+                                                                                               ^
+Function body:           def _run_erb_app47views47museums47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Los Angeles County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @LACMA.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( l[:date], {:style => "font-size: 13px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Hammer Museum</h3>\n"
+@output_buffer.concat "  ";  @Hammer.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Orange County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @OCMA.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Norton Simon Museum</h3>\n"
+@output_buffer.concat "  ";  @NortonSimon.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Getty Center Los Angeles</h3>\n"
+@output_buffer.concat "  ";  @GettyCenter.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Skirball Museum</h3>\n"
+@output_buffer.concat "  ";  @Skirball.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:11:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:5: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+@output_buffer.concat "  \t"; @output_buffer.concat(( l[:date], {:style => "font-size: 13px"} ).to_s); @output_buffer.concat "<br />\n"
+                                                                                               ^) on line #5 of app/views/museums/index.html.erb:
+2:   <h3>Los Angeles County Museum Of Art</h3>
+3:   <% @LACMA.each do |l| %>
+4:   	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+5:   	<%= l[:date], {:style => "font-size: 13px"} %><br />
+6:   <% end %>
+7: </div>
+8: <div class="museum">
+
+    app/views/museums/index.html.erb:40:in `compile!'
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (103.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:11:53) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+ERROR: compiling _run_erb_app47views47museums47index46html46erb RAISED compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:5: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+@output_buffer.concat "  \t"; @output_buffer.concat(( l[:date], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+                                                                                                                  ^
+Function body:           def _run_erb_app47views47museums47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Los Angeles County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @LACMA.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( l[:date], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Hammer Museum</h3>\n"
+@output_buffer.concat "  ";  @Hammer.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Orange County Museum Of Art</h3>\n"
+@output_buffer.concat "  ";  @OCMA.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Norton Simon Museum</h3>\n"
+@output_buffer.concat "  ";  @NortonSimon.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Getty Center Los Angeles</h3>\n"
+@output_buffer.concat "  ";  @GettyCenter.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "<div class=\"museum\">\n"
+@output_buffer.concat "  <h3>Skirball Museum</h3>\n"
+@output_buffer.concat "  ";  @Skirball.each do |l| ; @output_buffer.concat "\n"
+@output_buffer.concat "  \t"; @output_buffer.concat(( link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:11:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Users/solomon/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/solomon/programming/museumIndex/app/views/museums/index.html.erb:5: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+@output_buffer.concat "  \t"; @output_buffer.concat(( l[:date], {:style => "font-weight: bold; font-size: 14px"} ).to_s); @output_buffer.concat "<br />\n"
+                                                                                                                  ^) on line #5 of app/views/museums/index.html.erb:
+2:   <h3>Los Angeles County Museum Of Art</h3>
+3:   <% @LACMA.each do |l| %>
+4:   	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+5:   	<%= l[:date], {:style => "font-weight: bold; font-size: 14px"} %><br />
+6:   <% end %>
+7: </div>
+8: <div class="museum">
+
+    app/views/museums/index.html.erb:40:in `compile!'
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (106.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:12:11) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5503ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:16:33) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5680ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:16:58) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5946ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:17:24) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5828ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:17:45) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5324ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:18:07) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5788ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:18:44) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5846ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:19:07) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5573ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:19:17) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 5825ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:24:23) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6147ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:25:09) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6200ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 16:53:24) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:177: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 16:53:25) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:177: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:54:12) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6973ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 16:54:40) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6829ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:39:19) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/museums_controller.rb:141:in `+'
+  app/controllers/museums_controller.rb:141:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:140:in `each'
+  app/controllers/museums_controller.rb:140:in `ExtractorOCMA'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:39:53) [GET]
+
+NoMethodError (undefined method `title' for #<Hash:0x3ec2040>):
+  app/controllers/museums_controller.rb:141:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:140:in `each'
+  app/controllers/museums_controller.rb:140:in `ExtractorOCMA'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 17:40:06) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:141: syntax error, unexpected '['
+      l.[:title][:url] = "http://www.ocma.net/" + l[:title][:url]
+         ^):
+  
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:40:21) [GET]
+
+NoMethodError (undefined method `title' for #<Hash:0x3deee98>):
+  app/controllers/museums_controller.rb:141:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:140:in `each'
+  app/controllers/museums_controller.rb:140:in `ExtractorOCMA'
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 17:40:51) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:141: syntax error, unexpected '['
+      l.[:title[:url]] = "http://www.ocma.net/" + l.[:title[:url]]
+         ^
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:141: syntax error, unexpected ']', expecting kEND
+      l.[:title[:url]] = "http://www.ocma.net/" + l.[:title[:url]]
+                      ^
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:141: syntax error, unexpected '['
+      l.[:title[:url]] = "http://www.ocma.net/" + l.[:title[:url]]
+                                                     ^
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:141: syntax error, unexpected ']', expecting kEND
+/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:181: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:41:55) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/museums_controller.rb:141:in `+'
+  app/controllers/museums_controller.rb:141:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:140:in `each'
+  app/controllers/museums_controller.rb:140:in `ExtractorOCMA'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:42:12) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7432ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:43:04) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7203ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:43:30) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6926ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:44:17) [GET]
+
+TypeError (can't convert nil into String):
+  app/controllers/museums_controller.rb:141:in `+'
+  app/controllers/museums_controller.rb:141:in `ExtractorOCMA'
+  app/controllers/museums_controller.rb:140:in `each'
+  app/controllers/museums_controller.rb:140:in `ExtractorOCMA'
+
+Rendered rescues/_trace (102.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:44:24) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6836ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:47:46) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6661ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:52:03) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7408ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:52:49) [GET]
+  [4;36;1mMuseum Load (0.9ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7408ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:53:40) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6809ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:55:13) [GET]
+  [4;36;1mMuseum Load (0.6ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7344ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:55:24) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #18 of app/views/museums/index.html.erb:
+15: <div class="museum">
+16:   <h3>Orange County Museum Of Art</h3>
+17:   <% @OCMA.each do |j| %>
+18:   	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+19:   	<p class="date"><%= l[:date] %></p>
+20:   <% end %>
+21: </div>
+
+    app/views/museums/index.html.erb:18
+    app/views/museums/index.html.erb:17:in `each'
+    app/views/museums/index.html.erb:17
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:55:58) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7187ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:56:14) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7078ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 17:56:25) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7059ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 18:01:34) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7470ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 18:01:54) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 6784ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 18:03:27) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 7147ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 19:49:12) [GET]
+
+SyntaxError (/Users/solomon/programming/museumIndex/app/controllers/museums_controller.rb:178: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 19:49:58) [GET]
+  [4;36;1mMuseum Load (0.8ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #37 of app/views/museums/index.html.erb:
+34: </div>
+35: <div class="museum">
+36:   <h3>Skirball Museum</h3>
+37:   <% @Skirball.each do |l| %>
+38:   	<%= link_to l[:title], l[:url], {:style => "font-weight: bold; font-size: 14px"} %><br />
+39:   <% end %>
+40: </div>
+
+    app/views/museums/index.html.erb:37
+    app/controllers/museums_controller.rb:11:in `index'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 19:52:15) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 15490ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 19:55:02) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 17879ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 19:57:01) [GET]
+  [4;35;1mMuseum Load (0.5ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 14561ms (View: 4, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 20:23:38) [GET]
+  [4;36;1mMuseum Load (0.4ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 13736ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 20:58:53) [GET]
+  [4;36;1mMuseum Load (0.8ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 16155ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 20:59:28) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 16053ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-22 21:04:17) [GET]
+  [4;36;1mMuseum Load (0.5ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 15886ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20090815183556)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "homes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090815183556')[0m
+Migrating to CreateMuseums (20090818034904)
+Migrating to CreateExhibitions (20090823041634)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "exhibitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "date" varchar(255), "url" varchar(255), "museum" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090823041634')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("exhibitions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("homes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("museums")[0m
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-08-23 23:03:56) [GET]
+  [4;36;1mMuseum Load (1.2ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Completed in 18959ms (View: 207, DB: 1) | 200 OK [http://localhost/]
