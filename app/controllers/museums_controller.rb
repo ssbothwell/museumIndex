@@ -105,6 +105,9 @@ class MuseumsController < ApplicationController
       end
     end
       @LACMA = @ExtractorLacma.to_hash
+      @LACMA.each do |l|
+        l[:date], foo = l[:date].split(" | ") 
+      end
   end
   
   def ExtractorHammer

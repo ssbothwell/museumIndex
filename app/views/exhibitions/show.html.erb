@@ -1,0 +1,24 @@
+<% title "Exhibition" %>
+
+<p>
+  <strong>Title:</strong>
+  <%=h @exhibition.title %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%=h @exhibition.date %>
+</p>
+<p>
+  <strong>Url:</strong>
+  <%=h @exhibition.url %>
+</p>
+<p>
+  <strong>Museum:</strong>
+  <%=h @exhibition.museum %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_exhibition_path(@exhibition) %> |
+  <%= link_to "Destroy", @exhibition, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", exhibitions_path %>
+</p>

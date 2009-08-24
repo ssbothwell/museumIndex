@@ -1,0 +1,20 @@
+<% form_for @exhibition do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :museum %><br />
+    <%= f.text_field :museum %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

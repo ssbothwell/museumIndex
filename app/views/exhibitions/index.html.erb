@@ -1,0 +1,23 @@
+<% title "Exhibitions" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Date</th>
+    <th>Url</th>
+    <th>Museum</th>
+  </tr>
+  <% for exhibition in @exhibitions %>
+    <tr>
+      <td><%=h exhibition.title %></td>
+      <td><%=h exhibition.date %></td>
+      <td><%=h exhibition.url %></td>
+      <td><%=h exhibition.museum %></td>
+      <td><%= link_to "Show", exhibition %></td>
+      <td><%= link_to "Edit", edit_exhibition_path(exhibition) %></td>
+      <td><%= link_to "Destroy", exhibition, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Exhibition", new_exhibition_path %></p>
