@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090824100034) do
+ActiveRecord::Schema.define(:version => 20090824232712) do
 
   create_table "exhibitions", :force => true do |t|
     t.string   "title"
@@ -35,6 +35,16 @@ ActiveRecord::Schema.define(:version => 20090824100034) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username",          :null => false
+    t.string   "email",             :null => false
+    t.string   "crypted_password",  :null => false
+    t.string   "password_salt",     :null => false
+    t.string   "persistence_token", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
