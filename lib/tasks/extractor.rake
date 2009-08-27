@@ -18,7 +18,9 @@ namespace :extractor do
 
     data_hash = extractorlacma.to_hash
     data_hash.each do |site_data|
-      site_data[:date], foo = site_data[:date].split(" | ") 
+      site_data[:date], foo = site_data[:date].split(" | ")
+      site_data[:date_open], site_data[:date_close] = site_data[:date].split("-")
+      site_data.delete(:date)
       site_data[:museum_id] = "1"
     end
   
@@ -129,7 +131,46 @@ namespace :extractor do
     end
     data_hash = extractorgettycenter.to_hash
   end
+
+  task :cafam => :environment do
+    extractorcafam = Scrubyt::Extractor.define do
+      fetch          'http://www.cafam.org/exhibitions.html'
+
+      exhibition "//span[@class='style30']/a[1]", :generalize => false do
+        url "href", :type => :attribute
+        exhibition_details do
+          title "//table//tr/td[1]/p[1]/span[@class='head']"
+          date "//table//tr/td[1]/p[1]/span[@class='body']"
+        end
+      end
+    end
+
+    data_hash = extractorcafam.to_hash
+    data_hash.each do |site_data|
+      # Cleanup dates
+      site_data[:date] = site_data[:date].gsub(/(\s\s).*/, '\1')
+      site_data[:date] = site_data[:date].gsub(/\s+/, ' ')
+      # Prepend URL domains
+      site_data[:url] = "http://www.cafam.org/" + site_data[:url]
+      site_data[:museum_id] = "7"
+      
+
+      # Write data to db
+      exhibition = Exhibition.create(site_data)
+      exhibition.save
+    end
+  end
   
-  task :all => [:lacma, :hammer, :ocma, :nortonSimon, :skirball]
+  task :fowler => :environment do
+    extractor = Scrubyt::Extractor.define do
+      fetch          'http://www.fowler.ucla.edu/incEngine/?content=cm&cm=exhibitions'
+
+      exhibition  "//blockquote/table//tr/td/table//tr[1]/td[2]", :generalize => false do
+        title "/strong"
+      end
+    end
+  end
+  
+  task :all => [:lacma, :hammer, :ocma, :nortonSimon, :skirball, :cafam]
 
 end
