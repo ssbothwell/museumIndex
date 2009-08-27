@@ -5,4 +5,3 @@ doc/api
 doc/app
 public/assets/*
 db/development.sqlite3
-config/database.yml
