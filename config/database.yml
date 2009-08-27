@@ -20,3 +20,6 @@ production:
   database: museumindex_production
   pool: 5
   timeout: 5000
+  username: root 
+  password: 
+  socket: /tmp/mysql.sock 

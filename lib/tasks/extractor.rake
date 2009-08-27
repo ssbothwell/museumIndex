@@ -39,7 +39,7 @@ namespace :extractor do
         url "href", :type => :attribute
         exhibition_details do
           title "//div[1]/div[2]/div[2]/div[2]/h1"
-          date "//div[1]/div[2]/div[2]/div[2]/h3"
+          date_open "//div[1]/div[2]/div[2]/div[2]/h3"
         end
       end
     end
@@ -62,7 +62,7 @@ namespace :extractor do
 
         exhibition "//table[3]//tr/td[4]/table[1]//tr/td", :generalize => false do
           title "//p/a[@class='ex_link']"
-          date "//p/span[3]"
+          date_open "//p/span[3]"
         end
     end
     
@@ -84,7 +84,7 @@ namespace :extractor do
 
         exhibition "//div[@class='ExhibitionSummary']" do
           title "//a[2]"
-          date "//div[@class='Dates']"
+          date_open "//div[@class='Dates']"
         end
     end
     
@@ -107,7 +107,7 @@ namespace :extractor do
         url "href", :type => :attribute
         exhibition_details do
           title "//h4[@class='program']"
-          date "//div[@class='event']/div[@class='event_info']/div[@class='time']/p[1]"
+          date_open "//div[@class='event']/div[@class='event_info']/div[@class='time']/p[1]"
         end
       end
     end
@@ -140,7 +140,7 @@ namespace :extractor do
         url "href", :type => :attribute
         exhibition_details do
           title "//table//tr/td[1]/p[1]/span[@class='head']"
-          date "//table//tr/td[1]/p[1]/span[@class='body']"
+          date_open "//table//tr/td[1]/p[1]/span[@class='body']"
         end
       end
     end
