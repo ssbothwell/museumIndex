@@ -9,7 +9,12 @@
   <% for exhibition in @exhibitions %>
     <tr>
       <td><%= link_to exhibition.title, exhibition.url %></td>
-      <td><%=h exhibition.date_open %></td>
+      <td>
+      <%=h exhibition.date_open %>
+      <% if exhibition.date_open = "nil" %>
+        Ongoing
+      <% end %>  
+      </td>
       <td><%=h exhibition.date_close %></td>
       <td><%= link_to "Show", exhibition %></td>
       <td><%= link_to "Edit", edit_exhibition_path(exhibition) %></td>

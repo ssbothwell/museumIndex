@@ -7,6 +7,9 @@
 <p>
   <strong>Date Open:</strong>
   <%=h @exhibition.date_open %>
+  <% if @exhibition.date_open = "nil" %>
+    Ongoing
+  <% end %>
 </p>
 <p>
   <strong>Date Close:</strong>
