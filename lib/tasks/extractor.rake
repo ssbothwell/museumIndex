@@ -19,7 +19,7 @@ namespace :extractor do
     data_hash = extractorlacma.to_hash
     data_hash.each do |site_data|
       site_data[:date], foo = site_data[:date].split(" | ")
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split("-")
+      site_data[:date_open], site_data[:date_close] = site_data[:date].split("\xE2\x80\x93")
       site_data.delete(:date)
       site_data[:museum_id] = "1"
     end
