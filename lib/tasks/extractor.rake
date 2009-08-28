@@ -154,7 +154,7 @@ namespace :extractor do
       site_data.delete(:date)
       # Prepend URL domains
       site_data[:url] = "http://www.cafam.org/" + site_data[:url]
-      site_data[:museum_id] = "7"
+      site_data[:museum_id] = "6"
       
 
       # Write data to db
