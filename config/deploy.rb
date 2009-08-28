@@ -7,9 +7,9 @@ set :use_sudo, false
 
 # Server
 
-role :app, "museumindex.ssbothwell.com"
-role :web, "museumindex.ssbothwell.com"
-role :db,  "museumindex.ssbothwell.com", :primary => true
+role :app, "208.88.125.40"
+role :web, "208.88.125.40"
+role :db,  "208.88.125.40", :primary => true
 set :user, "ssbothwelladmin"
 set :use_sudo, false
 
