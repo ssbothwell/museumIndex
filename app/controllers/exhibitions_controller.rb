@@ -5,4 +5,9 @@ class ExhibitionsController < ResourceController::Base
     allow logged_in
   end
   
+  def show
+    @current = Exhibition.current
+    @exhibition = Exhibition.find(params[:id])
+  end
+  
 end

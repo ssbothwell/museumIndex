@@ -137,9 +137,12 @@ namespace :extractor do
       site_data[:date_open], site_data[:date_close] = site_data[:date].split(" through ")
       site_data.delete(:date)
       if site_data[:date_open] != "Ongoing"
-      site_data[:date_open] = Date.parse(site_data[:date_open])
-      site_data[:date_close] = Date.parse(site_data[:date_close])   
-      end   
+        site_data[:date_open] = Date.parse(site_data[:date_open])
+        site_data[:date_close] = Date.parse(site_data[:date_close])   
+      end 
+      if site_data[:date_open] = "Ongoing"
+        site_data[:date_open] = nil
+      end
       site_data[:museum_id] = "4"
     end
 

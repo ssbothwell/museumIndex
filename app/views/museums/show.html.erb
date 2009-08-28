@@ -15,10 +15,15 @@
 </div>
 
   <ul><strong>Current Exhibitions:</strong>
-    <% @museum.exhibitions.each do |l| %>
-    <li><%= l.title %></li>
+    <% @museum.exhibitions.current.each do |l| %>
+    <li><%= link_to l.title, l %></li>
     <% end %>
   </ul>  
+  <ul><strong>Upcoming Exhibitions:</strong>
+    <% @museum.exhibitions.upcoming.each do |l| %>
+    <li><%= link_to l.title, l %></li>
+    <% end %>
+  </ul>
 
 <p>
   <%= link_to "Edit", edit_museum_path(@museum) %> |
