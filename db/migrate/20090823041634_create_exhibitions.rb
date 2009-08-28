@@ -2,7 +2,7 @@ class CreateExhibitions < ActiveRecord::Migration
   def self.up
     create_table :exhibitions do |t|
       t.string :title
-      t.string :date
+      t.date :date
       t.string :url
       t.string :museum
       t.timestamps

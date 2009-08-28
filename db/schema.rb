@@ -21,11 +21,6 @@ ActiveRecord::Schema.define(:version => 20090825044325) do
     t.string   "date_close"
   end
 
-  create_table "homes", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "museums", :force => true do |t|
     t.string   "name"
     t.string   "location"
