@@ -1,4 +1,13 @@
 class UsersController < ApplicationController
+  access_control do
+    allow all, :to => [:new,:edit,:update,:create]     
+    allow :admin
+  end
+  
+  def index
+    @users = User.all
+  end
+  
   def new
     @user = User.new
   end
