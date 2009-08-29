@@ -1,6 +1,6 @@
 class Museum < ActiveRecord::Base
   has_many :exhibitions
-  has_attached_file :photo, :styles => { :small => "200x200>" },
+  has_attached_file :photo, :styles => { :small => "300x300>" },
                     :url  => "/assets/products/:id/:style/:basename.:extension",
                     :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
 

@@ -10,7 +10,11 @@
   <strong>Location:</strong>
   <%=h @museum.location %><br />
   <strong>Telephone:</strong>
-  <%=h number_to_phone(@museum.telephone) %>
+  <%=h number_to_phone(@museum.telephone) %><br />
+  <strong>Hours:</strong>
+  <%=h @museum.hours %><br />
+  <strong>Website:</strong>
+  <%= link_to @museum.website, @museum.website %><br />
 </p>
 <div id="map"></div>
 </div>
@@ -44,6 +48,9 @@
   // Call this function when the page has been loaded
   function initialize() {
     function createMarker(point,html) {
+      // ======== Add a "directions" link ======
+      html += '<br> <a style="color:blue;" href="http://maps.google.com/maps?saddr=&daddr=' + point.toUrlValue() + '" target ="_blank">Click for directions<\/a>';
+
       var marker = new GMarker(point);
       GEvent.addListener(marker, "click", function() {
         marker.openInfoWindowHtml(html);
