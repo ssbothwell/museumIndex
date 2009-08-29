@@ -1,6 +1,6 @@
 # Application
 set :application, "museumIndex"
-set :deploy_to, "/home/ssbothwelladmin/museumindex.ssbothwell.com"
+set :deploy_to, "/var/rails/museumIndex"
 
 # Settings
 set :use_sudo, false
@@ -10,7 +10,7 @@ set :use_sudo, false
 role :app, "208.88.125.40"
 role :web, "208.88.125.40"
 role :db,  "208.88.125.40", :primary => true
-set :user, "ssbothwelladmin"
+set :user, "capistrano"
 set :use_sudo, false
 
 # Git

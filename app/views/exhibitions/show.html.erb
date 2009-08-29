@@ -10,14 +10,12 @@
   <% if @exhibition.date_open = "nil" %>
     Ongoing
   <% end %>
-</p>
-<p>
   <strong>Date Close:</strong>
   <%=h @exhibition.date_close %>
 </p>
 <p>
-  <strong>Url:</strong>
-  <%=h @exhibition.url %>
+  <strong>Link:</strong>
+  <%= link_to @exhibition.title, @exhibition.url %>
 </p>
 <p>
   <strong>Museum:</strong>
