@@ -1,11 +1,13 @@
 one:
   title: MyString
-  date: MyString
+  date_open: MyDate
+  date_close: MyDate
   url: MyString
   museum: MyString
 
 two:
   title: MyString
-  date: MyString
+  date_open: MyDate
+  date_close: MyDate
   url: MyString
   museum: MyString

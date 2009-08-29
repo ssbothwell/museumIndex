@@ -10,8 +10,10 @@
   <strong>Location:</strong>
   <%=h @museum.location %><br />
   <strong>Telephone:</strong>
-  <%=h @museum.telephone %>
+  <%=h number_to_phone(@museum.telephone) %>
 </p>
+<div id="map" style="width: 450x; height: 350px"></div>
+
 </div>
 
   <ul><strong>Current Exhibitions:</strong>
@@ -25,8 +27,33 @@
     <% end %>
   </ul>
 
+    <% 
+    geo = Google::Geo.new "ABQIAAAAAQu_w3gsZDzjEayN7Mkn7BTJQa0g3IQ9GZqIMmInSLzwtGDKaBQKDrEFjkghyaYDRHlNnNpzlvjogw" 
+    addresses = geo.locate @museum.location
+    addresses.size
+    address = addresses.first
+    %>
+
 <p>
   <%= link_to "Edit", edit_museum_path(@museum) %> |
   <%= link_to "Destroy", @museum, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", museums_path %>
 </p>
+<script type="text/javascript">
+  google.load("maps", "2");
+  
+  // Call this function when the page has been loaded
+  function initialize() {
+    var map = new google.maps.Map2(document.getElementById("map"));
+    map.setCenter(new GLatLng(<%= address.latitude %>, <%= address.longitude %>), 16);
+    map.addControl(new GSmallMapControl());
+    
+    var point = new GLatLng(<%= address.latitude %>, <%= address.longitude %>);
+    var marker = createMarker(point,'LACMA')
+    map.addOverlay(marker);
+
+  }
+  google.setOnLoadCallback(initialize);
+  
+</script>
+

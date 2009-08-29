@@ -3,4 +3,5 @@ class MuseumsController < ResourceController::Base
     allow all, :to => [:index, :show]     
     allow :admin
   end
+
 end
