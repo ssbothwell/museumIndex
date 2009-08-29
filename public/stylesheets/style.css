@@ -1,6 +1,6 @@
+/** General Style Settings **/
 #container {
 	float: left;
-	margin: auto auto;
 	width: 100%;
 	height: 100%;
 	border-style:solid;
@@ -23,48 +23,7 @@ h1 {
 }
 
 ul {
-	padding: 0;
-	margin-bottom: -1px;
 	list-style: none;
-}
-
-ul#location {
-		margin-bottom: -2px;
-		padding-left: 4px;
-}
-ul#location li {
-  list-style: none;
-  display: inline;
-	border-style:solid;
-	border-width: 1px 1px 0 1px;
-}
-
-.museum {
-	float: left;
-	width: auto;
-	height: auto;
-	margin: 10px 40px;
-	padding-bottom: 0;
-
-}
-
-.exhibitions {
-	float: left;
-	width: 500px;
-}
-
-#selected {
-	background-color: yellow;
-}
-
-#description {
-	float: left;
-}
-
-p.date {
-	font-size: 13px;
-	margin: 0;
-	padding: 0;
 }
 
 #errorExplanation {
@@ -75,3 +34,39 @@ p.date {
 	padding: 0px;
 	margin: 10px;
 }
+/** End General Style Settings **/
+
+/** Navbar **/
+ul#location {
+		margin-bottom: -2px;
+		padding-left: 4px;
+}
+
+ul#location li {
+  list-style: none;
+  display: inline;
+	border-style:solid;
+	border-width: 1px 1px 0 1px;
+}
+
+#selected {
+	background-color: yellow;
+}
+/** End Navbar **/
+
+/** Museum Profile Page **/
+.museum {
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 10px 40px;
+	padding-bottom: 0;
+}
+
+#map {
+	width: 350x; 
+	height: 250px;
+	border-style:solid;
+	border-width: 1px 1px 1px 1px;
+}
+/** End Museum Profile Page **/
