@@ -12,7 +12,7 @@
   <strong>Telephone:</strong>
   <%=h number_to_phone(@museum.telephone) %>
 </p>
-<div id="map" style="width: 450x; height: 350px"></div>
+<div id="map" style="width: 350x; height: 250px"></div>
 
 </div>
 
@@ -44,12 +44,20 @@
   
   // Call this function when the page has been loaded
   function initialize() {
+    function createMarker(point,html) {
+      var marker = new GMarker(point);
+      GEvent.addListener(marker, "click", function() {
+        marker.openInfoWindowHtml(html);
+      });
+      return marker;
+    }
+    
     var map = new google.maps.Map2(document.getElementById("map"));
     map.setCenter(new GLatLng(<%= address.latitude %>, <%= address.longitude %>), 16);
     map.addControl(new GSmallMapControl());
     
     var point = new GLatLng(<%= address.latitude %>, <%= address.longitude %>);
-    var marker = createMarker(point,'LACMA')
+    var marker = createMarker(point,'LACMA <br /> <%= address.street %><br /><%= address.city %> <%= address.state %> <%= address.zip %>')
     map.addOverlay(marker);
 
   }
