@@ -16,7 +16,7 @@
   <strong>Website:</strong>
   <%= link_to @museum.website, @museum.website %><br />
 </p>
-<div id="map"></div>
+<div id="map"><div id="mapMarker"></div></div>
 </div>
 
   <ul><strong>Current Exhibitions:</strong>
@@ -31,7 +31,7 @@
   </ul>
 
     <% 
-    geo = Google::Geo.new "ABQIAAAAAQu_w3gsZDzjEayN7Mkn7BTJQa0g3IQ9GZqIMmInSLzwtGDKaBQKDrEFjkghyaYDRHlNnNpzlvjogw" 
+    geo = Google::Geo.new YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml') [ENV['RAILS_ENV']] 
     addresses = geo.locate @museum.location
     addresses.size
     address = addresses.first
@@ -49,7 +49,7 @@
   function initialize() {
     function createMarker(point,html) {
       // ======== Add a "directions" link ======
-      html += '<br> <a style="color:blue;" href="http://maps.google.com/maps?saddr=&daddr=' + point.toUrlValue() + '" target ="_blank">Click for directions<\/a>';
+      html += '<br> <a href="http://maps.google.com/maps?saddr=&daddr=' + point.toUrlValue() + '" target ="_blank">Click for directions<\/a>';
 
       var marker = new GMarker(point);
       GEvent.addListener(marker, "click", function() {
@@ -63,7 +63,7 @@
     map.addControl(new GSmallMapControl());
     
     var point = new GLatLng(<%= address.latitude %>, <%= address.longitude %>);
-    var marker = createMarker(point,'LACMA <br /> <%= address.street %><br /><%= address.city %> <%= address.state %> <%= address.zip %>')
+    var marker = createMarker(point,'<b>LACMA</b> <br /> <%= address.street %><br /><%= address.city %> <%= address.state %> <%= address.zip %>')
     map.addOverlay(marker);
 
   }

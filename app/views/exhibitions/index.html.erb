@@ -11,9 +11,7 @@
       <td><%= link_to exhibition.title, exhibition.url %></td>
       <td>
       <%=h exhibition.date_open %>
-      <% if exhibition.date_open = "nil" %>
-        Ongoing
-      <% end %>  
+
       </td>
       <td><%=h exhibition.date_close %></td>
       <td><%= link_to "Show", exhibition %></td>

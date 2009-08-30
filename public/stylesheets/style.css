@@ -68,5 +68,12 @@ ul#location li {
 	height: 250px;
 	border-style:solid;
 	border-width: 1px 1px 1px 1px;
+	font-size: 14px;
+}
+
+#map a {
+	color: #3D3F3E;
+	font-weight: bold;
+	text-decoration: underline;
 }
 /** End Museum Profile Page **/

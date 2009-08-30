@@ -1,186 +1,119 @@
 namespace :extractor do
   desc "Extract LACMA Current Exhibitions"
   task :lacma => :environment do
-    extractorlacma = Scrubyt::Extractor.define do
-      fetch          'http://www.lacma.org/art/ExhibCurrent.aspx'
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.lacma.org/art/ExhibCurrent.aspx')
+    page.root.xpath("//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a").each do |link|
+      exhibition = Exhibition.new
+      exhibition[:url] = link['href']
+      exhibition[:title] = link.text
 
-      exhibition "//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a[1]", :generalize => false do
-        url 'href', :type => :attribute
-        exhibition_details do
-          title "//table//tr/td[1]/p[2]/span[@class='BODY_exhTitle']"
-          title "//table[2]//tr/td[1]/p[3]/span[@class='BODY_exhTitle']"
-          title "//table[2]//tr/td[1]/p[3]/span/span[@class='BODY_exhTitle']"
-          date "//table//tr/td[1]/p/span/span[@class='BODY_criticsChoice_creditName']"
-          date "//table//tr/td[1]/p/span[@class='BODY_criticsChoice_creditName']"
-        end
+      datepage  = agent.click link
+      datepage.root.xpath("//table//tr/td[1]/p/span/span[@class='BODY_criticsChoice_creditName']").each do |date|
+        date, foo = date.text.split(" | ")
+        date_open, date_close = date.split("â")
+        exhibition[:date_open] = Date.parse(date_open)
+        exhibition[:date_close] = Date.parse(date_close)
       end
-    end
-
-    data_hash = extractorlacma.to_hash
-    data_hash.each do |site_data|
-      # Cleanup dates
-      site_data[:date], foo = site_data[:date].split(" | ")
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split("\xE2\x80\x93")
-      site_data.delete(:date)
-      site_data[:date_open] = Date.parse(site_data[:date_open])
-      site_data[:date_close] = Date.parse(site_data[:date_close])      
-      site_data[:museum_id] = "1"
-    end
-  
-    data_hash.each do |site_data|
-      exhibition = Exhibition.create(site_data)
+      datepage.root.xpath("//table//tr/td[1]/p/span[@class='BODY_criticsChoice_creditName']").each do |date|
+        date, foo = date.text.split(" | ")
+        date_open, date_close = date.split("â")
+        exhibition[:date_open] = Date.parse(date_open)
+        exhibition[:date_close] = Date.parse(date_close)
+      end
+      exhibition[:museum_id] = "1"
       exhibition.save
     end
   end
   
   desc "Extract Hammer Current Exhibitions"
   task :hammer => :environment do
-    extractorhammer = Scrubyt::Extractor.define do
-      fetch          'http://hammer.ucla.edu/exhibitions/exhibitions'
+    agent = WWW::Mechanize.new
+    page = agent.get('http://hammer.ucla.edu/exhibitions/exhibitions')
+    page.root.xpath("//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a").each do |link|
+      exhibition = Exhibition.new
+      exhibition[:url] = "http://hammer.ucla.edu" + link['href']
+      exhibition[:title] = link.text
 
-      exhibition "//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a[*]", :generalize => false do
-        url "href", :type => :attribute
-        exhibition_details do
-          title "//div[1]/div[2]/div[2]/div[2]/h1"
-          date "//div[1]/div[2]/div[2]/div[2]/h3"
-        end
+      detailspage = agent.click link
+      detailspage.root.xpath("//div[1]/div[2]/div[2]/div[2]/h3").each do |date|
+        date_open, date_close = date.text.split(" - ")
+        exhibition[:date_open] = Date.parse(date_open)
+        exhibition[:date_close] = Date.parse(date_close)
       end
-    end
-    
-    data_hash = extractorhammer.to_hash
-    data_hash.each do |site_data|
-      # Cleanup dates
-      site_data[:url] = "http://hammer.ucla.edu/" + site_data[:url]
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split(" - ")
-      site_data.delete(:date)
-      site_data[:date_open] = Date.parse(site_data[:date_open])
-      site_data[:date_close] = Date.parse(site_data[:date_close])
-      site_data[:museum_id] = "2"
-    end
-    
-    data_hash.each do |site_data|
-      exhibition = Exhibition.create(site_data)
+      exhibition[:museum_id] = "2"
       exhibition.save
     end
   end
 
   task :ocma => :environment do
-    extractorocma = Scrubyt::Extractor.define do
-      fetch          'http://www.ocma.net/index.html?page=current'
-
-        exhibition "//table[3]//tr/td[4]/table[1]//tr/td", :generalize => false do
-          title "//p/a[@class='ex_link']"
-          date "//p/span[3]"
-        end
-    end
-    
-    data_hash = extractorocma.to_hash
-    data_hash.each do |site_data|
-      # Cleanup dates
-      site_data[:url] = "http://www.ocma.net/index.html?page=current"
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split(" - ")
-      site_data.delete(:date)
-      site_data[:date_open] = Date.parse(site_data[:date_open])
-      site_data[:date_close] = Date.parse(site_data[:date_close])
-      site_data[:museum_id] = "5"
-    end
-    
-    data_hash.each do |site_data|
-      exhibition = Exhibition.create(site_data)
-  
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.ocma.net/index.html?page=current')
+    page.root.xpath("//tr/td/p/a[@class='ex_link']").each_with_index do |title, i|
+      exhibition = Exhibition.new
+      exhibition[:title]  = title.text
+      exhibition[:url] = "http://www.ocma.net/#{title['href']}"
+      date_open, date_close = title.xpath("//tr[1]/td[#{i + 1}]/p/span[3]").text.split(" - ")
+      exhibition[:date_open] = Date.parse(date_open)
+      exhibition[:date_close] = Date.parse(date_close)
+      exhibition[:museum_id] = "5"
       exhibition.save
     end
+    # for 1.8: Date.strptime('May 3, 09', "%b %d, %C"). Not needed in 1.9
   end
 
   task :nortonSimon => :environment do
-    extractornortonsimon = Scrubyt::Extractor.define do
-      fetch          'http://www.nortonsimon.org/exhibitions.aspx?id=6'
-
-        exhibition "//div[@class='ExhibitionSummary']" do
-          title "//a[2]"
-          date "//div[@class='Dates']"
-        end
-    end
-    
-    data_hash = extractornortonsimon.to_hash
-    data_hash.each do |site_data|
-      # Cleanup dates
-      site_data[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6"
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split("\xE2\x80\x93")
-      site_data.delete(:date)
-      site_data[:date_open] = Date.parse(site_data[:date_open])
-      site_data[:date_close] = Date.parse(site_data[:date_close])
-      site_data[:museum_id] = "3"
-    end
-    
-    data_hash.each do |site_data|
-      exhibition = Exhibition.create(site_data)
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.nortonsimon.org/exhibitions.aspx?id=6')
+    page.root.xpath("//div[@class='ExhibitionSummary']").each_with_index do |event, i|
+      exhibition = Exhibition.new
+      event.xpath("//div[@class='ExhibitionSummary' and position()=#{i + 1}]/a[2]").each do |text|
+        exhibition[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6#{text['href']}"
+      end
+      exhibition[:title]  = event.xpath("//div[@class='ExhibitionSummary' and position()=#{i + 1}]/a[2]").text
+      date_open, date_close = event.xpath("//div[@class='ExhibitionSummary' and position()=#{i + 1}]/div[@class='Dates']").text.split("\xE2\x80\x93")
+      exhibition[:date_open] = Date.parse(date_open)
+      exhibition[:date_close] = Date.parse(date_close)
+      exhibition[:museum_id] = "3"
       exhibition.save
     end
   end
   
   task :skirball => :environment do
-    extractorskirball = Scrubyt::Extractor.define do
-      fetch          'http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u'
-      exhibition "//div[1]/table//tr/td/h4/a", :generalize => false do
-        url "href", :type => :attribute
-        exhibition_details do
-          title "//h4[@class='program']"
-          date "//div[@class='event']/div[@class='event_info']/div[@class='time']/p[1]"
-        end
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u')
+    page.root.xpath("//div[1]/table//tr/td/h4/a").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text
+      exhibition[:url] = "http://www.skirball.org/#{event['href']}"
+      detailspage = agent.click event
+      detailspage.root.xpath("//div[@class='event']/div[@class='event_info' and position()=2]/div[@class='time' and position()=1]/p").each do |date|
+        date_open, date_close = date.text.gsub(/\s+/, ' ').split(" through ")
+        if date_open == "Ongoing ":  date_open = nil  end
+        if date_open != nil:  date_open = Date.parse(date_open)  end
+        if date_close != nil:  date_close = Date.parse(date_close)  end
+        exhibition[:date_open] = date_open
+        exhibition[:date_close] = date_close
       end
-    end
-    data_hash = extractorskirball.to_hash
-    data_hash.each do |site_data|
-      # Cleanup dates
-      site_data[:url] = "http://www.skirball.org/" + site_data[:url]
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split(" through ")
-      site_data.delete(:date)
-      if site_data[:date_open] != "Ongoing"
-        site_data[:date_open] = Date.parse(site_data[:date_open])
-        site_data[:date_close] = Date.parse(site_data[:date_close])   
-      end 
-      if site_data[:date_open] = "Ongoing"
-        site_data[:date_open] = nil
-      end
-      site_data[:museum_id] = "4"
-    end
-
-    data_hash.each do |site_data|
-      exhibition = Exhibition.create(site_data)
+      exhibition[:museum_id] = "4"
       exhibition.save
     end
   end
   
   task :cafam => :environment do
-    extractorcafam = Scrubyt::Extractor.define do
-      fetch          'http://www.cafam.org/exhibitions.html'
-
-      exhibition "//span[@class='style30']/a[1]", :generalize => false do
-        url "href", :type => :attribute
-        exhibition_details do
-          title "//table//tr/td[1]/p[1]/span[@class='head']"
-          date "//table//tr/td[1]/p[1]/span[@class='body']"
-        end
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.cafam.org/exhibitions.html')
+    page.root.xpath("//span[@class='style30']/a[1]").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text.split(/\s+/).each{ |word| word.capitalize! }.join(' ')
+      exhibition[:url] = "http://www.cafam.org/#{event['href']}"
+      detailspage = agent.click event
+      detailspage.root.xpath("//table//tr/td[1]/p[1]/span[@class='body']").each do |date|
+        date_open, date_close = date.text.gsub(/(\s\s).*/, '\1').gsub(/\s+/, ' ').split(" ")
+        exhibition[:date_open] = Date.parse(date_open)
+        exhibition[:date_close] = Date.parse(date_close)
       end
-    end
-    
-    data_hash = extractorcafam.to_hash
-    data_hash.each do |site_data|
-      # Cleanup dates
-      site_data[:date] = site_data[:date].gsub(/(\s\s).*/, '\1')
-      site_data[:date] = site_data[:date].gsub(/\s+/, ' ')
-      site_data[:date_open], site_data[:date_close] = site_data[:date].split(" &#150; ")
-      site_data.delete(:date)
-      site_data[:date_open] = Date.parse(site_data[:date_open])
-      site_data[:date_close] = Date.parse(site_data[:date_close])
-      # Prepend URL domains
-      site_data[:url] = "http://www.cafam.org/" + site_data[:url]
-      site_data[:museum_id] = "6"
-      
-
-      # Write data to db
-      exhibition = Exhibition.create(site_data)
+      exhibition[:museum_id] = "6"
       exhibition.save
     end
   end
@@ -205,5 +138,7 @@ namespace :extractor do
   end
   
   task :all => [:lacma, :hammer, :ocma, :nortonSimon, :skirball, :cafam]
-
+  
+  task :mecha => :environment do
+  end
 end
