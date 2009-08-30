@@ -119,12 +119,24 @@ namespace :extractor do
   end
 
   task :gettyCenter => :environment do
-    extractorgettycenter = Scrubyt::Extractor.define do
-      fetch          'http://www.getty.edu/museum/exhibitions'
-
-        title "//td[1]/div/table[2]//tr/td//p/a[1]"
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.getty.edu/museum/exhibitions')
+    i = 0
+    page.root.xpath("//table//tr[1]/td[1]/div/table[2]//tr/td[2]/p/a").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title]  =  event.text
+      exhibition[:url] = "http://www.getty.edu#{event['href']}"
+      i = i + 2 
+      date_open, date_close = event.xpath("//table//tr[1]/td[1]/div/table[2]//tr[#{i}]/td[2]/p").text.gsub(event.text,'').split("–")
+      if date_open == "Ongoing":  date_open = nil  end
+      if date_close == "Ongoing":  date_close = nil  end
+      if date_open != nil:  date_open = Date.parse(date_open)  end
+      if date_close != nil:  date_close = Date.parse(date_close)  end
+      exhibition[:date_open] = date_open
+      exhibition[:date_close] = date_close
+      exhibition[:museum_id] = "7"
+      exhibition.save
     end
-    data_hash = extractorgettycenter.to_hash
   end
       
   task :fowler => :environment do
