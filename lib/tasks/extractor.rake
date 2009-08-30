@@ -118,7 +118,7 @@ namespace :extractor do
     end
   end
 
-  task :gettyCenter => :environment do
+  task :gettycenter => :environment do
     agent = WWW::Mechanize.new
     page = agent.get('http://www.getty.edu/museum/exhibitions')
     i = 0
@@ -138,19 +138,105 @@ namespace :extractor do
       exhibition.save
     end
   end
-      
-  task :fowler => :environment do
-    extractor = Scrubyt::Extractor.define do
-      fetch          'http://www.fowler.ucla.edu/incEngine/?content=cm&cm=exhibitions'
-
-      exhibition  "//blockquote/table//tr/td/table//tr[1]/td[2]", :generalize => false do
-        title "/strong"
-      end
+  
+  task :molaa => :environment do
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.molaa.org/Art/exhibitions.aspx')
+    page.root.xpath("//div[@class='infoModule']/p/b/a").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text
+      exhibition[:url] = "http://www.molaa.org#{event['href']}"
+      detailspage = agent.click event
+        detailspage.root.xpath("//div[3]/div[3]/h2").each do |date|
+          if date.text.downcase.include? "permanent": date = nil else date = date.text end 
+          if date != nil: 
+            date_open, date_close = date.split(" – ") 
+            exhibition[:date_open] = Date.parse(date_open)
+            exhibition[:date_close] = Date.parse(date_close)
+          end
+        end
+        exhibition[:museum_id] = "8"
+        exhibition.save
     end
   end
   
-  task :all => [:lacma, :hammer, :ocma, :nortonSimon, :skirball, :cafam]
-  
-  task :mecha => :environment do
+  task :janm => :environment do
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.janm.org/exhibits/')
+
+    page.root.xpath("//div[@class='exhibition']/p[1]/strong//a").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text
+      exhibition[:url] = "http://www.janm.org#{event['href']}"
+      date_open, date_close = event.xpath("//div[@class='exhibition' and position()=1]/p[1]/em").text.split(" - ")
+      exhibition[:date_open] = Date.parse(date_open)
+      exhibition[:date_close] = Date.parse(date_close)
+      exhibition[:museum_id] = "9"
+      exhibition.save
+    end
   end
+  
+  task :bowers => :environment do
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.bowers.org/explore/exhibitions.jsp')
+    
+    page.root.xpath("//table[@class='exhTBL' and position()=1]//tr[3]/td[@class='exhTDArt' and position()=2]/p[1]/span[@class='red14B']").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text
+      exhibition[:url] = "http://www.bowers.org/explore/exhibitions.jsp"
+
+      date_open, date_close = event.xpath("//table[@class='exhTBL' and position()=1]//tr[3]/td[@class='exhTDArt' and position()=2]/p[1]/strong").text.split(" – ")
+      if date_open == "ongoing": date_open = nil else date_open = Date.parse(date_open) end
+      if date_close == "ongoing": date_close = nil else date_close = Date.parse(date_close) end
+      exhibition[:date_open] =  date_open
+      exhibition[:date_close] = date_close
+      exhibition[:museum_id] = "10"
+      exhibition.save
+    end
+
+    page = agent.get('http://www.bowers.org/explore/upcomingExhibitions.jsp')
+    i = 1
+    page.root.xpath("//table[@class='exhTBL']//tr/td[@class='exhTDArt' and position()=2]/p[1]/span[@class='red14B' and position()=1]").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text
+      exhibition[:url] = "http://www.bowers.org/explore/exhibitions.jsp"
+      puts event.text
+      date_open, date_close = event.xpath("//table[@class='exhTBL']//tr[#{i}]/td[@class='exhTDArt' and position()=2]/p[1]/span[@class='spon12B' and position()=2]").text.split(" - ")
+      i = i + 2
+      if date_open == "ongoing": date_open = nil else date_open = Date.parse(date_open) end
+      if date_close == "ongoing": date_close = nil else date_close = Date.parse(date_close) end
+      exhibition[:date_open] = date_open
+      exhibition[:date_close] = date_close
+      exhibition[:museum_id] = "10"
+      exhibition.save
+    end
+  end
+  
+  task :fowler => :environment do
+    agent = WWW::Mechanize.new
+    page = agent.get('http://www.fowler.ucla.edu/incEngine/?content=cm&cm=exhibitions')
+    page.root.xpath("//blockquote/table//tr/td/table//tr[1]/td[2]/strong").each do |event|
+      puts event.text
+    #  foo, bar = event.xpath("//blockquote/table//tr/td/table//tr[1]/td[2]").text.split(event.text)
+    #  puts bar
+    end
+  end
+  
+  task :wildling => :environment do
+    agent = WWW::Mechanize.new
+    page = agent.get('http://wildlingmuseum.org/exhibitionCur.html')
+    page.root.xpath("//div[@class='scroll' and position()=3]/p/strong[1]").each do |event|
+      exhibition = Exhibition.new
+      exhibition[:title] = event.text.gsub(/\s+/, ' ')
+      exhibition[:url] = "http://wildlingmuseum.org/exhibitionCur.html"
+      date_open, date_close = event.xpath("//div[@class='scroll' and position()=3]/p/strong[2]").text.split(" through ")
+      exhibition[:date_open] = Date.parse(date_open)
+      exhibition[:date_close] = Date.parse(date_close)
+      exhibition[:museum_id] = "69"
+      exhibition.save
+    end
+  end
+  
+  task :all => [:lacma, :hammer, :ocma, :nortonSimon, :skirball, :cafam, :gettycenter, :molaa]
+  
 end
