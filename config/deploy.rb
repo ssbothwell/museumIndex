@@ -1,6 +1,6 @@
 # Application
 set :application, "museumIndex"
-set :deploy_to, "/var/rails/museumIndex"
+set :deploy_to, "/var/www/museumIndex"
 
 # Settings
 set :use_sudo, false
