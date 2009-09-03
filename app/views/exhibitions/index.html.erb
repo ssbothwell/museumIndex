@@ -23,23 +23,22 @@
   <br />
   Sort By:
   
-  <%= order @search, :by => :museum_name %>
-  <%= order @search, :by => :date_open %>
-  <%= order @search, :by => :date_close %>
+  
+  
+  
 </p>
 <table>
   <tr>
     <th><%= order @search, :by => :title %></th>
-    <th>Date Open</th>
-    <th>Date Close</th>
+    <th><%= order @search, :by => :museum_name %></th>
+    <th><%= order @search, :by => :date_open %></th>
+    <th><%= order @search, :by => :date_close %></th>
   </tr>
   <% for exhibition in @exhibitions %>
     <tr>
       <td><%= link_to exhibition.title, exhibition.url %></td>
-      <td>
-      <%=h exhibition.date_open %>
-
-      </td>
+      <td><%= link_to exhibition.museum.name, exhibition.museum %>
+      <td><%=h exhibition.date_open %></td>
       <td><%=h exhibition.date_close %></td>
       <td><%= link_to "Show", exhibition %></td>
       <td><%= link_to "Edit", edit_exhibition_path(exhibition) %></td>
