@@ -20,7 +20,7 @@ ul {
 	margin: 0;
 	list-style-type: none;
 }
-li { 
+.inline li { 
 	display: inline;
 }
 

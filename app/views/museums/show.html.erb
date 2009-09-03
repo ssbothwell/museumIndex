@@ -30,12 +30,7 @@
     <% end %>
   </ul>
 
-    <% 
-    geo = Google::Geo.new YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml') [ENV['RAILS_ENV']] 
-    addresses = geo.locate @museum.location
-    addresses.size
-    address = addresses.first
-    %>
+
 
 <p>
   <%= link_to "Edit", edit_museum_path(@museum) %> |
@@ -59,11 +54,11 @@
     }
     
     var map = new google.maps.Map2(document.getElementById("map"));
-    map.setCenter(new GLatLng(<%= address.latitude %>, <%= address.longitude %>), 16);
+    map.setCenter(new GLatLng(<%= @address.latitude %>, <%= @address.longitude %>), 16);
     map.addControl(new GSmallMapControl());
     
-    var point = new GLatLng(<%= address.latitude %>, <%= address.longitude %>);
-    var marker = createMarker(point,'<b>LACMA</b> <br /> <%= address.street %><br /><%= address.city %> <%= address.state %> <%= address.zip %>')
+    var point = new GLatLng(<%= @address.latitude %>, <%= @address.longitude %>);
+    var marker = createMarker(point,'<b>LACMA</b> <br /> <%= @address.street %><br /><%= @address.city %> <%= @address.state %> <%= @address.zip %>')
     map.addOverlay(marker);
 
   }

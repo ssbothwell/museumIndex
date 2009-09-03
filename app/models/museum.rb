@@ -1,4 +1,5 @@
 class Museum < ActiveRecord::Base
+  before_save :create_coordinates
   has_many :exhibitions
   has_attached_file :photo, :styles => { :small => "300x300>" },
                     :url  => "/assets/products/:id/:style/:basename.:extension",
@@ -11,4 +12,13 @@ class Museum < ActiveRecord::Base
     "#{id}-#{name.gsub(/[^a-z1-9]+/i, '_')}"
   end
   
+
+  def create_coordinates
+    geo = Google::Geo.new YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml') [ENV['RAILS_ENV']] 
+    addresses = geo.locate self.location
+    addresses.size
+    address = addresses.first
+    self.latitude = address.latitude
+    self.longitude = address.longitude
+  end  
 end
