@@ -12,21 +12,13 @@
     </li>
     <li>
     <%= f.label :date_open, "Date" %>
-    <%= f.text_field :date_open_gte, :size => 10 %> - <%= f.text_field :date_close_lte, :size => 10 %>
+    <%= f.text_field :date_open_gte, :size => 10, :value => "From" %> - <%= f.text_field :date_close_lte, :size => 10, :value => "To" %>
     </li>
 
     <li><%= f.submit "search" %></li>
   </ul>
 <% end %>
 
-<p>
-  <br />
-  Sort By:
-  
-  
-  
-  
-</p>
 <table>
   <tr>
     <th><%= order @search, :by => :title %></th>
