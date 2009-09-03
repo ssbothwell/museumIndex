@@ -10,4 +10,9 @@ class ExhibitionsController < ResourceController::Base
     @exhibition = Exhibition.find(params[:id])
   end
   
+  def index
+    @search = Exhibition.search(params[:search])
+    @exhibitions = @search.all
+  end
+  
 end

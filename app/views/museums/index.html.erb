@@ -10,9 +10,9 @@
     <tr>
       <td><%= link_to museum.name, museum %></td>
       <td><%=h museum.location %></td>
-      <td><%=h museum.telephone %></td>
-      <td><%= link_to "Edit", edit_museum_path(museum) %></td>
-      <td><%= link_to "Destroy", museum, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%=h number_to_phone(museum.telephone) %></td>
+      <td><%= link_to "&nbsp", { :controller => 'museum', :action => 'edit' }, :class => 'ss_sprite ss_page_edit small' -%></td>
+      <td><%= link_to ("&nbsp", {:action => "destroy", :id => museum }, :confirm => "Are you sure?", :method => :delete, :class => 'ss_sprite ss_delete small') %></td>
     </tr>
   <% end %>
 </table>

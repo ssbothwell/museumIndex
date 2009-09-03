@@ -1,8 +1,35 @@
 <% title "Exhibitions" %>
 
+<% form_for @search do |f| %>
+  <ul class="prepend-2 span-20 append-2">
+    <li>
+    <%= f.label :title_like, "Title" %>
+    <%= f.text_field :title_like, :size => 27 %>
+    </li>
+    <li>
+    <%= f.label :museum_id_equals, "Museum" %>
+    <%= f.collection_select :museum_id_equals, Museum.all, :id, :name, :include_blank => true %>
+    </li>
+    <li>
+    <%= f.label :date_open, "Date" %>
+    <%= f.text_field :date_open_gte, :size => 10 %> - <%= f.text_field :date_close_lte, :size => 10 %>
+    </li>
+
+    <li><%= f.submit "search" %></li>
+  </ul>
+<% end %>
+
+<p>
+  <br />
+  Sort By:
+  
+  <%= order @search, :by => :museum_name %>
+  <%= order @search, :by => :date_open %>
+  <%= order @search, :by => :date_close %>
+</p>
 <table>
   <tr>
-    <th>Title</th>
+    <th><%= order @search, :by => :title %></th>
     <th>Date Open</th>
     <th>Date Close</th>
   </tr>

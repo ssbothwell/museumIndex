@@ -5,7 +5,7 @@
 	margin-top: 10px;
 }
 
-#content {
+.content {
 	border-style:solid;
 	border-width: 1px 0px 0 0px;
 }
@@ -15,24 +15,25 @@ a {
 	color: black;
 }
 
-/** End General Style Settings **/
-
 /** Navbar **/
 ul {
-	margin-bottom: 0;
+	margin: 0;
+	list-style-type: none;
 }
-ul#location li {
+li { 
+	display: inline;
+}
+
+ul.location li {
   list-style: none;
-  display: inline;
 	border-style:solid;
 	border-width: 1px 1px 0 1px;
 	padding: 1px;
 }
 
-#selected {
-	background-color: yellow;
+.search {
+	width: 100px;
 }
-/** End Navbar **/
 
 /** Museum Profile Page **/
 .museum {
@@ -56,4 +57,3 @@ ul#location li {
 	font-weight: bold;
 	text-decoration: underline;
 }
-/** End Museum Profile Page **/

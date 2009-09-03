@@ -15,9 +15,9 @@
 <body>
   <div class="container">
     <div id="header">
-      <h1>Museum Index</h2>
-        <ul id="location">
-          <li id="selected"><a href="#">Southern California</a></li>
+      <h1 class="prepend-8 span-7 append-7">Museum Index</h2>
+        <ul class="location prepend-6">
+          <li class="highlight"><a href="#">Southern California</a></li>
           <li><a href="#">Northern California</a></li>
           <li><a href="#">New York</a></li>
           <li><a href="#">London</a></li>
@@ -25,8 +25,7 @@
           <li><a href="#">more..</a></li>
         </ul>
     </div>
-    <div id="content">
-
+    <div class="content span-24">
 <%= yield %>
 </body>
 </html>
