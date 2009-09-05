@@ -32,10 +32,12 @@
       <td><%= link_to exhibition.museum.name, exhibition.museum %>
       <td><%=h exhibition.date_open %></td>
       <td><%=h exhibition.date_close %></td>
+      <% if has_admin %>
       <td><%= link_to "Show", exhibition %></td>
       <td><%= link_to "Edit", edit_exhibition_path(exhibition) %></td>
       <td><%= link_to "Destroy", exhibition, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
+      <% end %>
   <% end %>
 </table>
 
