@@ -2,10 +2,10 @@ namespace :extractor do
   desc "Extract LACMA Current Exhibitions"
   task :lacma => :environment do
     museum = Museum.find_by_name("Los Angeles County Museum Of Art")
-    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://www.lacma.org/art/ExhibCurrent.aspx')
     page.root.xpath("//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a").each do |link|
+      exhibition = museum.exhibitions.new
       exhibition[:url] = link['href']
       exhibition[:title] = link.text
 
@@ -29,10 +29,10 @@ namespace :extractor do
   desc "Extract Hammer Current Exhibitions"
   task :hammer => :environment do
     museum = Museum.find_by_name("Hammer Museum")
-    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://hammer.ucla.edu/exhibitions/exhibitions')
     page.root.xpath("//ul[@id='current-exhibitions']/li[*]/dl/dd[*]/a").each do |link|
+      exhibition = museum.exhibitions.new
       exhibition[:url] = "http://hammer.ucla.edu" + link['href']
       exhibition[:title] = link.text
 
@@ -48,10 +48,10 @@ namespace :extractor do
 
   task :ocma => :environment do
     museum = Museum.find_by_name("Orange County Museum Of Art")
-    exhibition = museum.exhibitions.new    
     agent = WWW::Mechanize.new
     page = agent.get('http://www.ocma.net/index.html?page=current')
     page.root.xpath("//tr/td/p/a[@class='ex_link']").each_with_index do |title, i|
+      exhibition = museum.exhibitions.new    
       exhibition[:title]  = title.text
       exhibition[:url] = "http://www.ocma.net/#{title['href']}"
       date_open, date_close = title.xpath("//tr[1]/td[#{i + 1}]/p/span[3]").text.split(" - ")
@@ -64,10 +64,10 @@ namespace :extractor do
 
   task :nortonSimon => :environment do
     museum = Museum.find_by_name("Norton Simon Museum")
-    exhibition = museum.exhibitions.new    
     agent = WWW::Mechanize.new
     page = agent.get('http://www.nortonsimon.org/exhibitions.aspx?id=6')
     page.root.xpath("//div[@class='ExhibitionSummary']").each_with_index do |event, i|
+      exhibition = museum.exhibitions.new    
       event.xpath("//div[@class='ExhibitionSummary' and position()=#{i + 1}]/a[2]").each do |text|
         exhibition[:url] = "http://www.nortonsimon.org/exhibitions.aspx?id=6#{text['href']}"
       end
@@ -81,10 +81,10 @@ namespace :extractor do
   
   task :skirball => :environment do
     museum = Museum.find_by_name("Skirball Cultural Center")
-    exhibition = museum.exhibitions.new    
     agent = WWW::Mechanize.new
     page = agent.get('http://www.skirball.org/index.php?option=com_ccevents&scope=exbt&task=summary&ccmenu=d2hhdcdzig9u')
     page.root.xpath("//div[1]/table//tr/td/h4/a").each do |event|
+      exhibition = museum.exhibitions.new    
       exhibition[:title] = event.text
       exhibition[:url] = "http://www.skirball.org/#{event['href']}"
       detailspage = agent.click event
@@ -102,10 +102,10 @@ namespace :extractor do
   
   task :cafam => :environment do
     museum = Museum.find_by_name("Craft And Folk Art Museum Los Angeles")
-    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://www.cafam.org/exhibitions.html')
     page.root.xpath("//span[@class='style30']/a[1]").each do |event|
+      exhibition = museum.exhibitions.new    
       exhibition[:title] = event.text.split(/\s+/).each{ |word| word.capitalize! }.join(' ')
       exhibition[:url] = "http://www.cafam.org/#{event['href']}"
       detailspage = agent.click event
@@ -120,11 +120,11 @@ namespace :extractor do
 
   task :gettycenter => :environment do
     museum = Museum.find_by_name("Getty Center Los Angeles")
-    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://www.getty.edu/museum/exhibitions')
     i = 0
     page.root.xpath("//table//tr[1]/td[1]/div/table[2]//tr/td[2]/p/a").each do |event|
+      exhibition = museum.exhibitions.new
       exhibition[:title]  =  event.text
       exhibition[:url] = "http://www.getty.edu#{event['href']}"
       i = i + 2 
@@ -145,6 +145,7 @@ namespace :extractor do
     agent = WWW::Mechanize.new
     page = agent.get('http://www.molaa.org/Art/exhibitions.aspx')
     page.root.xpath("//div[@class='infoModule']/p/b/a").each do |event|
+      exhibition = museum.exhibitions.new
       exhibition[:title] = event.text
       exhibition[:url] = "http://www.molaa.org#{event['href']}"
       detailspage = agent.click event
@@ -162,11 +163,11 @@ namespace :extractor do
   
   task :janm => :environment do
     museum = Museum.find_by_name("Japanese American National Museum")
-    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://www.janm.org/exhibits/')
 
     page.root.xpath("//div[@class='exhibition']/p[1]/strong//a").each do |event|
+      exhibition = museum.exhibitions.new
       exhibition[:title] = event.text
       exhibition[:url] = "http://www.janm.org#{event['href']}"
       date_open, date_close = event.xpath("//div[@class='exhibition' and position()=1]/p[1]/em").text.split(" - ")
@@ -178,11 +179,11 @@ namespace :extractor do
   
   task :bowers => :environment do
     museum = Museum.find_by_name("Bowers Museum")
-    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://www.bowers.org/explore/exhibitions.jsp')
     
     page.root.xpath("//table[@class='exhTBL' and position()=1]//tr[3]/td[@class='exhTDArt' and position()=2]/p[1]/span[@class='red14B']").each do |event|
+      exhibition = museum.exhibitions.new
       exhibition[:title] = event.text
       exhibition[:url] = "http://www.bowers.org/explore/exhibitions.jsp"
 
