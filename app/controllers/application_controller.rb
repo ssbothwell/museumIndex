@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
 
 
   helper_method :current_user
+  helper_method :has_admin
   
   private
 
@@ -21,5 +22,11 @@ class ApplicationController < ActionController::Base
     @current_user = current_user_session && current_user_session.record
   end
   
+  def has_admin
+    return @has_admin if defined?(@has_admin)
+    if current_user != nil then
+      @has_admin = current_user.has_role? :admin
+    end
+  end
 
 end

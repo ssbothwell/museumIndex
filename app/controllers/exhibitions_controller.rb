@@ -1,9 +1,7 @@
 class ExhibitionsController < ResourceController::Base
   access_control do
     allow :admin  
-    actions :index, :show do
-    allow all
-    end
+    allow all, :to => [:index, :show]
   end
   
   def show
