@@ -1,6 +1,8 @@
 namespace :extractor do
   desc "Extract LACMA Current Exhibitions"
   task :lacma => :environment do
+    museum = Museum.find_by_name("Los Angeles County Museum Of Art")
+    exhibition = museum.exhibitions.new
     agent = WWW::Mechanize.new
     page = agent.get('http://www.lacma.org/art/ExhibCurrent.aspx')
     page.root.xpath("//td[@class='contentcolumn' and position()=2]/table/tbody/tr/td/table/tbody/tr[*]/td[2]/a").each do |link|
