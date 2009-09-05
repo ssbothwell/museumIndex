@@ -1,8 +1,9 @@
 class ExhibitionsController < ResourceController::Base
   access_control do
-    allow all, :to => [:index, :show, :current]     
-    allow :admin
-    allow logged_in
+    allow :admin  
+    actions :index, :show do
+    allow all
+    end
   end
   
   def show
